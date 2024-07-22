@@ -1,0 +1,805 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+}
+
+.header-container {
+   width: 100%;
+   position: fixed;
+   margin-bottom: 100px;
+    
+}
+
+.header-container h1 {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    top: 16px;
+    position: absolute;
+}
+
+.header-container nav ul {
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    max-width: 100%;
+}
+
+nav a {
+    height: 50px;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    max-width: 100%;
+}
+
+nav a:hover {
+    background-color: #111010;
+    text-decoration: underline;
+    color: #24a4e4;
+    border-radius: 2px;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    height: 50px;
+}
+
+.sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.552);
+    backdrop-filter: blur(10px);
+    color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+}
+
+.sidebar li {
+    width: 100%;
+    color: white;
+    position: relative;
+    float: left;
+    display: block;
+}
+
+.sidebar li a {
+    width: 100%;
+    color: white;
+    flex-direction: column;  
+    font-size: 18px;
+    position: absolute;
+    display: block;
+    left: 8px;
+}
+
+.sidebar a:hover {
+    background-color: #24a4e4;
+    color: #000000;
+    padding: 18px;
+}
+
+.sidebar .fa-solid {
+    position: absolute;
+    right: 18px;
+    top: 24px;
+    font-size: 25px;
+    max-width: 100%;
+    margin-right: 14px;
+}
+
+.hr-sidebar {
+    border: 1px solid #1f1d1d;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    width: 80%;
+}
+
+.fa-solid {
+    display: none;
+}
+
+ .hr {
+    border: none;
+    margin-top: 100px;
+    width: 75%;
+    margin-bottom: 100px;
+    display: block;
+    border-top: 1px solid #191818;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+ hr {
+   
+    margin-top: 22px;
+    width: 100%;
+} 
+
+.hr-footer {
+    border: 1px solid #f1f1f1;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    width: 80%;
+    display: none;
+    
+}
+
+.hr-footer-bottom {
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+
+.cuzita-logo img {
+    width: 100%;
+    /* object-fit: fill;
+    object-position: 100%; */
+    border-radius: 4px;
+    height: 500px;
+    
+}
+
+.cuzita-logo {
+    padding: 8px;
+    width: 100%;
+    margin-top: 15px;  
+}
+
+
+.container-values {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container-values ul{
+   justify-content: left;
+   align-items: flex-end;
+}
+
+.container-values ul li {
+    justify-content: left;
+    align-items: flex-start;
+    font-size: 38px;
+    font-weight: bold;
+    list-style-type: decimal;
+    list-style-position: inside;
+    text-align: justify;
+    margin-left: 10px;
+}
+
+.container-values h1, del {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+    color: #127eb3;
+}
+
+
+
+.container-values p {
+    padding: 8px;
+    font-size: 35px;
+    font-weight: 300;
+    max-width: 100%;
+}
+
+.container-mission {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.container-mission p {
+    list-style: lower-alpha;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 8px;
+    max-width: 100%;
+}
+
+.container-mission h1 {
+    margin-left: 10px;
+    font-size: 27px;
+    color: #127eb3;
+}
+
+.container-vision {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container-vision p {
+    padding: 8px;
+    font-size: 50px;
+    max-width: 100%;
+    
+}
+.container-vision h1 {
+    margin-left: 10px;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.membership-link a  {
+    margin: auto;
+    background-color: #000000;
+    width: 180px;
+    height: 70px;
+    display: block;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.intro-container {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    border: none;
+    margin-top: 70px; 
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.intro-container p {
+    padding: 8px;
+    font-size: 70px;
+    font-weight: bold;
+    color: #127eb3;
+    max-width: 100%;
+}
+
+.intro-container h1 {
+    margin-left: 10px;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+
+}
+
+ .intro-img {
+    width: 100%;
+    display: flex;
+}
+
+.intro-img img {
+    display: none;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: right 100%;
+    height: 400px;
+    border-radius: 6px;
+    
+}
+
+/* Footer */
+
+ footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.about-footer {
+    display: flex;
+    padding: 18px;
+    width: 100%;
+    margin-left: 10px;
+    
+}
+
+.contact-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+    padding: 15px;
+}
+
+.contact-content a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 22px;
+}
+
+.contact-content a:hover {
+    background-color: #127eb3;
+}
+
+.contact-content h1 {
+    font-size: 20px;
+}
+
+.follow-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+    padding: 15px;
+}
+
+.follow-content i {
+    padding: 8px;
+    font-size: 22px;
+    color: rgb(206, 199, 199);
+}
+
+.follow-content i:hover {
+    background-color: #127eb3;
+}
+
+.follow-content h1 {
+    font-size: 20px;
+}
+
+.footer-about {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+    padding: 15px;
+}
+
+.footer-about h1 {
+    font-size: 20px;
+}
+
+.footer-about a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 22px;
+}
+
+.footer-about a:hover {
+    background-color: #127eb3;
+}
+
+.content-bottom {
+    padding: 8px;
+    text-align: center;
+}
+
+.content-bottom p {
+    font-size: 24px;
+    color: #f1f1f1;
+}  
+
+@media screen and (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .fa-solid {
+        display: block;
+        font-size: 25px;
+        margin-right: 25px;
+    }
+
+    li h1 {
+        margin-bottom: 10px;
+        font-size: 25px;
+        position: absolute;
+        left: 0;
+        
+    }
+
+    .header-container {
+        max-width: 100%;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .hr {
+        border: 1px solid black;
+        margin-top: 22px;
+        width: 80%;
+    }
+    
+    hr {
+        border-width: 50px;
+        margin-top: 22px;
+    }
+
+    .hr-footer {
+        border: 1px solid #f1f1f1;
+        margin-top: 22px;
+        margin-bottom: 22px;
+        width: 80%;
+    }
+
+    .hr-footer-bottom {
+        width: 100%;
+        border: 1px solid #f1f1f1;
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
+
+    .cuzita-logo img {
+        max-width: 100%;
+        /* object-fit: contain;
+        object-position: center 100%; */
+        border-radius: 4px;
+        height: 400px;
+        
+    }
+
+    .cuzita-logo {
+        padding: 8px;
+        width: 100%;
+        margin-top: 2px;  
+    }
+
+
+    .container-values {
+        display: block;
+        padding: 8px;
+        width: 100%;
+        border: none;
+        margin-left: 0;
+    }
+
+    .container-values ul{
+       justify-content: left;
+       align-items: flex-end;
+       margin-bottom: 100px;
+    }
+
+    .container-values ul li {
+        justify-content: left;
+        align-items: flex-start;
+        font-size: 33px;
+        font-weight: bold;
+        list-style-type: decimal;
+        list-style-position: inside;
+        text-align: justify;
+        margin-left: 10px;
+        padding: 8px;
+    }
+
+    .container-values h1, del {
+        font-weight: bold;
+        font-size: 20px;
+        margin-left: 10px;
+        color: #127eb3;
+        font-weight: bold;
+    }
+
+    .membership-link a  {
+        margin: auto;
+        background-color: #000000;
+        width: 180px;
+        height: 70px;
+        display: block;
+        border-radius: 6px;
+        padding: 15px;
+        font-size: 25px;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+   
+
+    .container-values p {
+        padding: 8px;
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .container-mission {
+        display: block;
+        padding: 8px;
+        width: 100%;
+        border: none;
+        margin-left: 0;
+    }
+
+
+    .container-mission p {
+        list-style: lower-alpha;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 8px;
+    }
+
+    .container-mission h1 {
+        margin-left: 10px;
+        font-size: 20px;
+        color: #127eb3;
+        font-weight: bold;
+    }
+
+    .container-vision {
+        display: block;
+        padding: 8px;
+        width: 100%;
+        border: none;
+        margin-left: 0;
+    }
+
+    .container-vision p {
+        padding: 8px;
+        font-size: 25px;
+        font-weight: lighter;
+    }
+
+    .container-vision h1 {
+        margin-left: 10px;
+        font-size: 20px;
+        color: #127eb3;
+        font-weight: bold;
+    }
+
+    .intro-container {
+        display: block;
+        padding: 8px;
+        max-width: 100%;
+        border: none;
+        margin-top: 80px;
+        margin-left: 0;
+        
+    }
+
+    .intro-container p {
+        padding: 8px;
+        font-size: 40px;
+        font-weight: lighter;
+        
+    }
+
+    .intro-container h1 {
+        margin-left: 10px;
+        font-size: 20px;
+        color: #000000;
+        font-weight: bold;
+    }
+
+
+    .intro-img img {
+        width: 100%;
+        object-fit: cover;
+        object-position: 100%;
+        z-index: -1;
+        display: block;
+    }
+
+    /* Footer */
+
+    footer {
+        background-color: black;
+        color: white;
+        max-width: 100%;
+    }
+
+    .about-footer {
+        display: inline-block;
+        padding: 8px;
+        max-width: 100%;
+        margin-left: 10px;
+        
+    }
+
+    .contact-content {
+        display: block;
+        margin-bottom: 18px;
+        width: 100%;
+    }
+
+    .contact-content a {
+        display: block;
+        text-decoration: none;
+        color: rgb(206, 199, 199);
+        padding: 4px;
+        font-size: 22px;
+    }
+
+    .contact-content h1 {
+        font-size: 20px;
+    }
+
+    .follow-content {
+        display: block;
+        margin-bottom: 18px;
+        width: 100%;
+    }
+
+    .follow-content i {
+        padding: 8px;
+        font-size: 22px;
+        color: rgb(206, 199, 199);
+    }
+
+    .follow-content h1 {
+        font-size: 20px;
+    }
+
+    .footer-about {
+        display: block;
+        margin-bottom: 18px;
+        width: 100%;
+    }
+
+    .footer-about h1 {
+        font-size: 20px;
+    }
+
+    .footer-about a {
+        display: block;
+        text-decoration: none;
+        color: rgb(206, 199, 199);
+        padding: 4px;
+        font-size: 22px;
+    }
+
+    .content-bottom {
+        padding: 8px;
+        text-align: center;
+    }
+
+    .content-bottom p {
+        font-size: 18px;
+        color: #f1f1f1;
+    }
+
+    
+}
+
+/* .cuzita-logo img, h3 {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 4px;
+    float: right;
+    margin: 20px 40px;
+    
+}
+
+.cuzita-logo {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+/* .container-values {
+    display: block;
+    padding: 8px;
+    width: 100%;
+} */
+
+/* .container-values h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.container-values h3 {
+    text-align: left;
+}
+
+.container-values p {
+    padding: 8px;
+    text-align: center;
+} */
+
+/* .container-mission {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    
+    margin-bottom: 35px;
+} */
+
+/* .container-mission p {
+    padding: 8px;
+    text-align: center;
+}
+
+.container-mission h1 {
+    text-align: center;
+    font-size: 18px;
+} */
+
+/* .container-vision {
+    display: block;
+    padding: 8px;
+    width: 100%;
+   
+    margin-bottom: 35px;
+} */
+
+/* .container-vision p {
+    padding: 8px;
+    text-align: center;
+}
+
+.container-vision h1 {
+    text-align: center;
+    font-size: 18px;
+} */
+
+/* .intro-container {
+    display: block;
+    padding: 8px;
+    width: 100%;
+    
+    margin-bottom: 35px;
+} */
+
+/* .intro-container p {
+    padding: 8px;
+    text-align: center;
+}
+
+.intro-container h1 {
+    text-align: center;
+    font-size: 18px;
+} */
+
