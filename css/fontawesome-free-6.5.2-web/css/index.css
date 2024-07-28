@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,7 +12,6 @@ header {
 
 .header-container {
    width: 100%;
-   position: fixed;
    margin-bottom: 100px;
     
 }
@@ -127,154 +126,181 @@ nav li {
     display: none;
 }
 
-/* Main Styles */
-.main-container {
-    width: 100%;
-    display: block;
-    margin-top: 100px;
+/* General Section Styles */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+    margin: 0 20px;
+    min-height: 80vh;
 }
 
-#section-about {
-    width: 100%;
-    display: block;
-    padding: 8px;
-}
-
-.about {
-    display: block;
-    margin-top: 15px;
-    padding: 8px;
-    margin-left: 200px;
-  
-}
-
-
-
-.about h2 {
-    font-size: 38px;
+/* Section Heading Styles */
+section h1 {
+    font-size: 90px;
     color: #127eb3;
-    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-.about-img {
-    max-width: 100%;
-}
-.about img {
-    width: 100%;
-    object-fit: contain;
-    object-position: 100%;
-    background-color: 10px;
-    border-radius: 6px;
-    z-index: -1;
-    margin-top: 50px;
-    height: 400px;
-    display: none;
-}
-
-.about p {
+/* Section Paragraph Styles */
+section p {
     font-size: 55px;
-    font-weight: bold;
-    color: #127eb3;
-    margin-top: 20px;
+    color: #0ef;
+    font-weight: 600;
+    margin: 10px 0;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
+/* Animation Styles */
+section .animate {
+    filter: blur(5px);
+    transition: 1s;
+    opacity: 0;
+}
+
+section.show-animate .animate {
+    filter: blur(0);
+    opacity: 1;
+}
+
+.sec-1 .animate {
+    transform: scale(0.7);
+}
+
+.sec-1.show-animate .animate {
+    transform: translateX(0);
+}
+
+.sec-2 .images img {
+    max-width: 100%;
+    margin: 0 30px;
+    transform: translateX(100%);
+    transition-delay: calc(.2s * var(--i));
+}
+
+.sec-2.show-animate .images img {
+    transform: translateX(0);
+}
+
+/* About Link Button Styles */
 .about-link {
     display: block;
-    margin-top: 4px;
-    background-color: #000000;
-    width: 200px;
+    margin-top: 24px;
+    background-color: #000;
+    width: 220px;
     height: 70px;
     border-radius: 18px;
     text-align: center;
     padding: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .about-link:hover {
     background-color: #127eb3;
-    color: #000000;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    color: #000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .about-link a {
     margin: auto;
     text-decoration: none;
-    padding: 8px;
-    color: white;
+    color: #fff;
     font-weight: bold;
     font-size: 22px;
+    transition: color 0.3s;
 }
 
 .about-link a:hover {
-    color: white;
+    color: #fff;
 }
 
-.about-cuzita {
-    display: inline-block;
-    width: 100%;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    padding: 8px;
-}
-
+/* About Section Styles */
 .about-cuzita img {
-    width: 80%;
     height: 700px;
-    /* object-fit: fill;
-    object-position: 100%; */
     border-radius: 6px;
-    margin: auto;
-    display: block;
-    align-items: center;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.about-cuzita {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .about-cuzita p {
     padding: 8px;
     font-size: 34px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-left: 200px;
+    color: #000;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px 0;
 }
 
 .about-cuzita hr {
     width: 75%;
-    border: 1px solid black;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    border: 1px solid #000;
+    margin: 25px 0;
 }
 
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    width: 100%; 
+    max-width: 100%; 
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Dot Styles */
+.dots-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover, .dot.active {
+    background-color: #717171;
+}
+
+/* Horizontal Rule Styles */
 .hr {
-    border: 1px solid black;
+    border: 1px solid #000;
     margin-top: 22px;
     width: 80%;
     margin-left: 200px;
     display: none;
-}
-
-
-
-/* Slide show styles */
-
-.container-img {
-    width: 100%;
-}
-
-.slideshow-conatiner {
-    border: 0px solid #f1f1f1;
-    width: 100%;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
-    margin: 30px;
-}
-.myslides p h3 {
-    padding: 8px;
-    font-size: 28px;
-    margin-left: 10px;
-}
-
-.slideshow-conatiner .myslides img {
-    max-width: 100%;
-    height: 1000px;
-    object-fit: scale-down;
 }
 
 .about-cuzita-offers {
@@ -370,57 +396,82 @@ nav li {
     width: 120px;
 }
 
+section.sec-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+    width: 100%;
+} 
+
 .events {
     display: flex;
+    flex-direction: row;
+    gap: 40px;
     width: 100%;
-    margin-top: 50px;
-    padding: 8px;
-}
-
-.event-content {
-    display: block;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 12px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .event-img img {
     width: 100%;
-    object-fit: contain;
-    object-position: 100%;
-    border-radius: 6px;
-    margin-top: 30px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.event-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+}
+
+.event-content:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 .event-content h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #127eb3;
+}
+
+.event-content h4 {
     font-size: 20px;
-    font-weight: bold;
-    padding: 8px;
+    margin: 5px 0;
+    color: #555;
 }
 
 .event-content p {
-    font-size: 27px;
-    color: #000000;
-    font-weight: bold;
-    padding: 8px;
-    text-shadow: 1px 1px 3px #4b4b4b;
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0 20px;
 }
 
 .event-content a {
-    margin: auto;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #127eb3;
+    color: #fff;
     text-decoration: none;
-    padding: 8px;
-    color: #000000;
-    font-weight: bold;
-    font-size: 20px;
-    color: #127eb3;
-    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .event-content a:hover {
-    color: #000000;
-    text-decoration: underline;
+    background-color: #0e5f8a;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+    width: 100%;
 }
 
 /* Footer */
@@ -589,139 +640,170 @@ footer {
         display: block;
     }
 
-    #section-about {
-        width: 100%;
-        display: block;
-        margin-top: 2px;
-    }
+    /* General Section Styles */
+section {
+   display: block;
+    margin: 0 20px;
+    min-height: 80vh;
+} 
 
-    .about {
-        display: block;
-        margin-top: 30px;
-        padding: 8px;
-        margin-left: 0;
+/* Section Heading Styles */
+    section h1 {
+    font-size: 60px;
+    color: #127eb3;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
 
-    }
+/* Section Paragraph Styles */
+section p {
+    font-size: 35px;
+    color: #0ef;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
 
-    .about h2 {
-        font-size: 50px;
-        z-index: 1;
-        position: absolute;
-        top: 10px;
-        margin-top: 70px;
-        color: #127eb3;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px #000000;
-    }
+/* Animation Styles */
+section .animate {
+    filter: blur(5px);
+    transition: 1s;
+    opacity: 0;
+}
 
-    .about-img {
-        max-width: 100%;
-    }
-    .about img {
-        width: 100%;
-        object-fit: contain;
-        object-position: 100%;
-        z-index: -1;
-        margin-top: 0;
-        display: block;
-    }
+section.show-animate .animate {
+    filter: blur(0);
+    opacity: 1;
+}
 
-    .about p {
-        font-size: 33px;
-        font-weight: lighter;
-        color: #000000;
-    }
+.sec-1 .animate {
+    transform: scale(0.7);
+}
 
-    .about-link {
-        display: block;
-        background-color: #000000;
-        width: 170px;
-        height: 50px;
-        border-radius: 18px;
-        text-align: center;
-        padding: 8px;
-        margin-top: 8px;
-    }
-    
-    .about-link:hover {
-        background-color: #127eb3;
-        color: #000000;
-        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    }
-    
-    .about-link a {
-        margin-top: 20px;
-        text-decoration: none;
-        padding: 8px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-    }
+.sec-1.show-animate .animate {
+    transform: translateX(0);
+}
 
-    .about hr {
-        display: block;
-        margin: auto;
-        border: 1px solid #000000;
-        margin-top: 50px;
-        width: 100%;
-    }
+.sec-2 .images img {
+    width: 100%;
+    transform: translateX(100%);
+    transition-delay: calc(.2s * var(--i));
+}
 
-    /* hr {
-        border-width: 50px;
-        margin-top: 22px;
-    } */
+.sec-2.show-animate .images img {
+    transform: translateX(0);
+}
 
-    .about-link a:hover {
-        color: white;
-    }
+/* About Link Button Styles */
+.about-link {
+    display: block;
+    margin-top: 24px;
+    background-color: #000;
+    color: #fff;
+    width: 220px;
+    height: 70px;
+    border-radius: 18px;
+    text-align: center;
+    padding: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
 
-    .about-cuzita {
-        display: block;
-        width: 100%;
-        
-    }
+.about-link:hover {
+    background-color: #127eb3;
+    color: #000;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
 
-    .about-cuzita img {
-        width: 100%;
-        height: 400px;
-        border-radius: 6px;
-        margin: auto;
-        height: none;
-    }
+.about-link a {
+    margin: auto;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    transition: color 0.3s;
+}
 
-    .about-cuzita p {
-        font-size: 25px;
-        font-weight: lighter;
-        margin: auto;
-        padding: 8px;
-    }
+.about-link a:hover {
+    color: #fff;
+}
 
-    .about-cuzita hr {
-        display: block;
-        margin: auto;
-        border: 1px solid #000000;
-        margin-top: 50px;
-        width: 100%;
-    }
+/* About Section Styles */
+.about-cuzita img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.about-cuzita {
+    display: block;
+    padding: 8px;
+}
 
-    .hr {
-        border: 1px solid black;
-        margin-top: 22px;
-        width: 80%;
-        display: none;
-    }
-    
-    hr {
-        border-width: 50px;
-        margin-top: 22px;
+.about-cuzita p {
+    padding: 8px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #000;
+}
 
-    }
+.about-cuzita hr {
+    width: 75%;
+    border: 1px solid #000;
+    margin: 25px 0;
+}
 
-    .myslides p h3 {
-        padding: 8px;
-        font-size: 28px;
-        margin-left: 10px;
-    }
+/* Slideshow Styles */
+.slideshow-container {
+    position: relative;
+    width: 100%; 
+    max-width: 100%; 
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Dot Styles */
+.dots-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot:hover, .dot.active {
+    background-color: #717171;
+}
+
+/* Horizontal Rule Styles */
+.hr {
+    border: 1px solid #000;
+    margin-top: 22px;
+    width: 80%;
+    margin-left: 200px;
+    display: none;
+}
+
 
     .about-cuzita-offers {
         display: block;
@@ -748,7 +830,6 @@ footer {
         font-weight: bold;
         list-style-type: decimal;
         list-style-position: inside;
-        
         margin-left: 10px;
     
     }
@@ -923,4 +1004,4 @@ footer {
         margin-top: 22px;
         margin-bottom: 18px;
     }
-}
+} 
