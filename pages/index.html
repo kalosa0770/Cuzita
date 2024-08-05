@@ -16,7 +16,7 @@
             <nav>
                 <ul class="sidebar">
                     <!-- Mobile menu bar -->
-                    <i class="fa-solid fa-close" onclick="hideSidebar()"></i>
+                    <i id="fa-close" class="fa-solid fa-close" onclick="hideSidebar()"></i>
                     <li><a href="../pages/index.html" title="Home">Home</a></li>
                     <hr class="hr-sidebar">
                     <li><a href="../pages/about.html" title="About Cuzita">About Cuzita</a></li>
@@ -28,14 +28,16 @@
                     <li><a href="../pages/team.html" title="Our Team">Our Team</a></li>
                 </ul>
                 <ul>
-                    <li><h1>Cuzita Club</h1></li>
+                    <!-- <li><h1>Cuzita Club</h1></li> -->
+                    <img src="../assets/logo.png" alt="">
                     <!-- Large Screen bar -->
-                    <li class="hideOnMobile"><a href="../pages/index.html" title="Home" class="active">Home</a></li>
+                    <!-- <li class="hideOnMobile"><a href="../pages/index.html" title="Home" class="active">Home</a></li> -->
+                    <li class="hideOnMobile"><a href="../pages/index.html" title="Home">Home</a></li>
                     <li class="hideOnMobile"><a href="../pages/about.html" title="About Cuzita">About Cuzita</a></li>
                     <li class="hideOnMobile"><a href="../pages/join.html" title="Be Part">Be Part</a></li>
                     <li class="hideOnMobile"><a href="contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
                     <li class="hideOnMobile"><a href="our_team.html" title="Our Team">Our Team</a></li>
-                    <i class="fa-solid fa-bars" onclick="showSidebar()"></i>
+                    <i id="fa-bars" class="fa-solid fa-bars" onclick="showSidebar()"></i>
                 </ul>
             </nav>
         </div>
@@ -45,20 +47,17 @@
     <section class="sec-1 show-animate">
         <h1 class="animate">Empowering the next generation of IT leaders.</h1>
         <p class="animate">Join CUZITA and let it open a gateway for you in this exciting world of Information Technology.</p>
-        <div class="about-link">
+        
+        <!-- <div class="about-link">
             <a href="join.html" class="animate">Join now</a>
-        </div>
-        <hr class="hr">
-    </section>
-    
+        </div> -->
+    </section> 
     <!-- About Cuzita -->
-    <section>
+    <section class="sec-2">
         <div class="about-cuzita">
-            <section class="sec-2">
-                <div class="images">
-                    <img src="../assets/logo.png" alt="students networking at an event" class="animate">
-                </div>
-            </section>
+                <!-- <div class="images">
+                    <img src="../assets/logo.png" alt="students networking at an event">
+                </div> -->
             <p>
                 Cavendish University Zambia Information Technology Association (Cuzita) is a student-run club at Cavendish Zambia dedicated to fostering IT skills and knowledge among students.
                 We provide a platform for members to learn, network, and collaborate on exciting IT projects.
@@ -66,9 +65,135 @@
             <hr class="hr">
         </div>
     </section>
+
+    <section class="success-stories">
+        <h2>The Beauty of working hard</h2>
+        <p>
+            The key in working hard begins in one self, see the people who have gone on to achieve great things in the IT industry. 
+            Their journeys can inspire and guide you as you navigate your own career path.
+        </p>
+        <div class="image-success">
+            <img src="../assets/successful-black-man.png" alt="" class="animate" style="--i:0">
+            <img src="../assets/Work-at-CCA-Photo-2.jpeg" alt="" class="animate" style="--i:1">
+            <img src="../assets/image-success-black-group.jpg" alt="" class="animate" style="--i:2">
+        </div>
+    </section>
+
+    <!--Testimonial place-->
+   <section class="testimonials-block">
+    <h2>Member Testimonials</h2>
+    <div class="testimonials">
+        
+        <div class="testimonial-img">
+            <img src="../assets/lady-suc.jpg" alt="">
+            <p>"Cuzita has been an incredible platform for me to learn and grow. The workshops and projects have significantly enhanced my technical skills." - Denise</p>
+        </div>
+        <div class="testimonial-img">
+            <img src="../assets/lady-laugh.jpeg" alt="">
+            <p>"Being part of Cuzita helped me land an internship at a top tech company. The networking opportunities were invaluable." - Alinase</p>
+        </div>
+        <div class="testimonial-img">
+            <img src="../assets/Success-Entreprenuer.jpeg" alt="">
+            <p>"Being part of Cuzita helped me land an internship at a top tech company. The networking opportunities were invaluable." - John</p>
+        </div>
+    </div>
+   </section>
+
+   <section class="sec-4">
+        <div class="about-cuzita-offers">
+            <ul class="offers">
+                <h1>We Offer</h1>
+                <li>Networking Opportunities</li>
+                <li>Cuzita spotlight</li>
+                <li>Cuzita IT challenges</li>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>Programming Languages</li>
+                <li>CyberSecurity</li>
+                <li>Collaboration skills</li>
+                <p>Interested in being part?</p>
+                <div class="about-link-offer">
+                    <a href="../pages/join.html">Join now</a>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+ 
     
     <!-- Slideshow of events hosted by Cuzita -->
+ 
+    
+    <!-- Video explaining about Cuzita -->
+
+
+    <!--Stories section-->
+
+
     <section>
+        <div class="team-animate">
+            <div class="team team0">
+                <h1>President</h1>
+                <p>Denise Seti</p>
+                <img src="../assets/lady-laugh.jpeg" alt="">
+            </div>
+            <div class="team team1">
+                <h1>Vice President</h1>
+                <p>Elijah Kalosa</p>
+                <img src="../assets/elijah.jpg" alt="">
+            </div>
+            <div class="team team2">
+                <h1>Secretary</h1>
+                <p>Micheal</p>
+                <img src="../assets/successful-black-man.png" alt="">
+            </div>
+            <div class="team team3">
+                <h1>Vice Secretary</h1>
+                <p>Recheal</p>
+                <img src="../assets/lady-suc.jpg" alt="">
+            </div>
+            <div class="team team4">
+                <h1>Media Personnel</h1>
+                <p>Christian</p>
+                <img src="../assets/african-students-computer-29039508.webp" alt="">
+            </div>
+            <div class="team team5">
+                <h1>Treasurer</h1>
+                <p>Peter</p>
+                <img src="../assets/Work-at-CCA-Photo-2.jpeg" alt="">
+            </div>
+            <div class="team team6">
+                <h1>Tech Ethusiast</h1>
+                <p>Brian Khondowe</p>
+               <img src="../assets/image-success-black-group.jpg" alt="">
+            </div>
+            <div class="team team7">
+                <h1>Co Founder</h1>
+                <p>Samuel Kapasa</p>
+                <img src="../assets/peace w3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="gallery">
+        <p>A showcase of photos and videos from our past events, workshops, and hackathons are in the books. See what we've been up to and get a glimpse of the vibrant community at Cuzita.</p>
+        <div class="about-link">
+            <a href="#">Read more</a>
+        </div>
+    </section>
+
+    <!-- <section class="partners">
+        <h2>Our Partners</h2>
+        <div class="partner-logos">
+            <img src="../assets/logo.png" alt="Partner 1">
+            <img src="../assets/genius-logo.jpeg" alt="Partner 2">
+            <img src="../assets/cuz.jpeg" alt="Partner 3">
+        </div>
+    </section> -->
+
+    <!-- <section>
         <div class="about-cuzita">
             <div class="container-img">
                 <div class="slideshow-container">
@@ -106,97 +231,118 @@
             </div>
             <hr class="hr">
         </div>
-    </section>
-    
-    <!-- Video explaining about Cuzita -->
-    <section>
-        <div class="about-cuzita-offers">
-            <ul>
-                <h1>We Offer</h1>
-                <li>Networking Opportunities</li>
-                <li>Cuzita spotlight</li>
-                <li>Cuzita IT challenges</li>
-                <p>Interested in being part?</p>
-                <div class="about-link-offer">
-                    <a href="../pages/join.html">Join now</a>
-                </div>
-            </ul>
-        </div>
-    </section>
+    </section> -->
     
     <!-- Upcoming Events Section -->
-    <section class="sec-5">
-        <div class="events">
-            <div class="event-content" style="--i:0">
-                <div class="event-img">
-                    <img src="../assets/hackathons.jpeg" alt="Hackathons">
+     <section>
+            <div class="events">
+                <div class="event-content">
+                    <div class="event-img">
+                        <img src="../assets/hackathons.jpeg" alt="Hackathons">
+                    </div>
+                    <h3>Hackathons</h3>
+                    <h4>
+                        Date: 17th August 2024<br>
+                        Time: 10:00 - 17:00
+                    </h4>
+                    <p>Be part of the upcoming hackathons held at Cavendish University Zambia.</p>
+                    <a href="../pages/join.html">Read more</a>
                 </div>
-                <h3>Hackathons</h3>
-                <h4>
-                    Date: 17th August 2024<br>
-                    Time: 10:00 - 17:00
-                </h4>
-                <p>Be part of the upcoming hackathons held at Cavendish University Zambia.</p>
-                <a href="../pages/join.html">Read more</a>
-            </div>
-            <hr class="hr">
-            <div class="event-content" style="--i:1">
-                <div class="event-img">
-                    <img src="../assets/codingnight.webp" alt="Coding Night">
+                <div class="event-content">
+                    <div class="event-img">
+                        <img src="../assets/codingnight.webp" alt="Coding Night">
+                    </div>
+                    <h3>Coding Night</h3>
+                    <h4>
+                        Date: 29th September 2024<br>
+                        Time: 17:00 - 20:00
+                    </h4>
+                    <p>Experience the atmosphere that comes out from the best of the best software developers.</p>
+                    <a href="../pages/join.html">Read more</a>
                 </div>
-                <h3>Coding Night</h3>
-                <h4>
-                    Date: 29th September 2024<br>
-                    Time: 17:00 - 20:00
-                </h4>
-                <p>Experience the atmosphere that comes out from the best of the best software developers.</p>
-                <a href="../pages/join.html">Read more</a>
-            </div>
-            <hr class="hr">
-            <div class="event-content" style="--i:2">
-                <div class="event-img">
-                    <img src="../assets/codingnight.webp" alt="Java Bootcamp">
+                <div class="event-content">
+                    <div class="event-img">
+                        <img src="../assets/codingnight.webp" alt="Java Bootcamp">
+                    </div>
+                    <h3>Java Bootcamp</h3>
+                    <h4>
+                        Date: 22 August 2024 - 27 August 2024<br>
+                        Time: 13:00 - 17:00
+                    </h4>
+                    <p>Your zeal in technology is fascinating! Attend a bootcamp for Java to unlock your full potential.</p>
+                    <a href="../pages/join.html">Read more</a>
                 </div>
-                <h3>Java Bootcamp</h3>
-                <h4>
-                    Date: 22 August 2024 - 27 August 2024<br>
-                    Time: 13:00 - 17:00
-                </h4>
-                <p>Your zeal in technology is fascinating! Attend a bootcamp for Java to unlock your full potential.</p>
-                <a href="../pages/join.html">Read more</a>
             </div>
-        </div>
     </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 1000,
+            },
+        });
+    </script>  -->
     
     <!-- Footer Section -->
     <footer>
         <div class="about-footer">
             <div class="contact-content">
                 <h1>LINKS</h1>
-                <a href="../pages/contact.html">Contact</a>
-                <a href="../pages/join.html">Be Part</a>
-                <a href="../pages/team.html">Member Spotlight</a>
+                <div class="footer-about-links">
+                    <a href="../pages/contact.html">Contact</a>
+                    <a href="../pages/join.html">Join</a>
+                    <a href="../pages/events.html">Events</a>
+                    <a href="../pages/resources.html">Resources</a>
+                </div>
             </div>
             <hr class="hr-footer">
             <div class="follow-content">
                 <h1>SOCIAL MEDIA</h1>
-                <i class="fa-brands fa-facebook-f" style="color: #127eb3;"></i>
-                <i class="fa-brands fa-whatsapp" style="color: rgb(22, 150, 22);"></i>
-                <i class="fa-brands fa-instagram" style="color: maroon;"></i>
+                <div class="follow-content-i">
+                    <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #127eb3;"></i></a>
+                    <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(22, 150, 22);"></i></a>
+                    <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram" style="color: maroon;"></i></a>
+                    <a href="https://www.twitter.com/Cuzita" target="_blank"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
+                    <a href="https://www.linkedin.com/company/Cuzita" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #0e76a8;"></i></a>
+                </div>
             </div>
             <hr class="hr-footer">
             <div class="footer-about">
                 <h1>CLUB</h1>
-                <a href="../pages/about.html">About</a>
-                <a href="../pages/team.html">Our Team</a>
-                <a href="../pages/index.html">Home</a>
+                <div class="footer-about-links">
+                    <a href="../pages/about.html">About</a>
+                    <a href="../pages/team.html">Team</a>
+                    <a href="../pages/index.html">Home</a>
+                    <a href="../pages/faq.html">FAQ</a>
+                    <a href="../pages/blog.html">Blog</a>
+                </div>
             </div>
+        </div>
+        <div class="newsletter">
+            <h1>NEWSLETTER</h1>
+            <p>Stay updated with our latest news and events. Subscribe to our newsletter!</p>
+            <form action="../subscribe" method="post">
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </div>
         <div class="content-bottom">
             <hr class="hr-footer-bottom">
-            <p>Cuzita @2024. All Rights Reserved</p>
+            <p>&copy; 2024 Cuzita - Cavendish University Zambia Information Technology Association</p>
         </div>
     </footer>
+    
 
     <script src="../css/fontawesome-free-6.5.2-web/js/index.js"></script>
 </body>

@@ -16,7 +16,7 @@
           <nav>
               <ul class="sidebar">
                 <!--Mobile menu bar-->
-                <i class="fa-solid fa-close" onclick=hideSidebar()></i>
+                <i id="fa-close" class="fa-solid fa-close" onclick=hideSidebar()></i>
                 <li><a href="../pages/index.html" title="Home">Home</a></li>
                 <hr class="hr-sidebar">
                 <li><a href="../pages/about.html" title="About Cuzita">About Cuzita</a></li>
@@ -28,15 +28,15 @@
                 <li><a href="../pages/team.html" title="Our Team">Our Team</a></li>
               </ul> 
               <ul>
-                <li><h1>Cuzita Club</h1></li>
-                <!-- <img src="../assets/logo.png" alt=""> -->
+                <!-- <li><h1>Cuzita Club</h1></li> -->
+                <img src="../assets/logo.png" alt="">
                 <!--Large Screen bar-->
                 <li class="hideOnMobile"><a href="../pages/index.html" title="Home" class="active">Home</a></li>
                 <li class="hideOnMobile"><a href="../pages/about.html" title="About Cuzita">About Cuzita</a></li>
                 <li class="hideOnMobile"><a href="../pages/join.html" title="Be Part">Be Part</a></li>
                 <li class="hideOnMobile"><a href="../pages/contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
                 <li class="hideOnMobile"><a href="../pages/team.html" title="Our Team">Our Team</a></li>
-                <i class="fa-solid fa-bars" onclick=showSidebar()></i>
+                <i id="fa-bars" class="fa-solid fa-bars" onclick=showSidebar()></i>
               </ul>  
           </nav>
         </div>
@@ -54,7 +54,7 @@
         <div class="team-members">
             <div class="team-achievements">
                 <div class="team-img">
-                    <img src="../assets/african-students-computer-29039508.webp" alt="">
+                    <img src="../assets/denise.jpg" alt="">
                     <div class="title">
                         <h3>Denise Seti</h3>
                         <h4>President</h4>
@@ -111,7 +111,7 @@
 
             <div class="team-achievements">
                 <div class="team-img">
-                    <img src="../assets/groupBlack.jpeg" alt="">
+                    <img src="../assets/micheal.jpg" alt="">
                     <div class="title">
                         <h3>Micheal</h3>
                         <h4>Secretary</h4>
@@ -139,7 +139,7 @@
 
             <div class="team-achievements">
                 <div class="team-img">
-                    <img src="../assets/codingnight.webp" alt="">
+                    <img src="../assets/lady-laugh.jpeg" alt="">
                     <div class="title">
                         <h3>Recheal Milele</h3>
                         <h4>Vice Secretary</h4>
@@ -192,7 +192,7 @@
 
             <div class="team-achievements">
                 <div class="team-img">
-                    <img src="../assets/black lives matter.jpg" alt="">
+                    <img src="../assets/christian.jpg" alt="">
                   <div class="title">
                     <h3>Christian Sele</h3>
                     <h4>Media Personnel</h4>
@@ -240,36 +240,53 @@
     </main>
 
     
-    <footer>
-        <!--footer details-->
-        <div class="about-footer">
-          <div class="contact-content">
+ <!-- Footer Section -->
+ <footer>
+    <div class="about-footer">
+        <div class="contact-content">
             <h1>LINKS</h1>
-            <a href="#">Contact</a>
-            <a href="#">Be Part</a>
-            <a href="#">Member Spotlight</a>
-            
-          </div>
-          <hr class="hr-footer">
-          <div class="follow-content">
+            <div class="footer-about-links">
+                <a href="../pages/contact.html">Contact</a>
+                <a href="../pages/join.html">Join</a>
+                <a href="../pages/events.html">Events</a>
+                <a href="../pages/resources.html">Resources</a>
+            </div>
+        </div>
+        
+        <div class="follow-content">
             <h1>SOCIAL MEDIA</h1>
-            <i class="fa-brands fa-facebook-f" style="color: #127eb3;"></i>
-            <i class="fa-brands fa-whatsapp" style="color: rgb(22, 150, 22);"></i>
-            <i class="fa-brands fa-instagram" style="color: maroon;"></i>
-            
-          </div>
-          <hr class="hr-footer">
-          <div class="footer-about">
+            <div class="follow-content-i">
+                <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #127eb3;"></i></a>
+                <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(22, 150, 22);"></i></a>
+                <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram" style="color: maroon;"></i></a>
+                <a href="https://www.twitter.com/Cuzita" target="_blank"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
+                <a href="https://www.linkedin.com/company/Cuzita" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #0e76a8;"></i></a>
+            </div>
+        </div>
+     
+        <div class="footer-about">
             <h1>CLUB</h1>
-            <a href="../pages/about.html">About</a>
-            <a href="#">Our Team</a>
-            <a href="#">Home</a>
-          </div>
-        </div> 
-        <div class="content-bottom">
-          <hr class="hr-footer-bottom">
-          <p>Cuzita @2024. All Rights Reservered</p>
-        </div>   
-      </footer>    
+            <div class="footer-about-links">
+                <a href="../pages/about.html">About</a>
+                <a href="../pages/team.html">Team</a>
+                <a href="../pages/index.html">Home</a>
+                <a href="../pages/faq.html">FAQ</a>
+                <a href="../pages/blog.html">Blog</a>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h1>NEWSLETTER</h1>
+        <p>Stay updated with our latest news and events. Subscribe to our newsletter!</p>
+        <form action="../subscribe" method="post">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+    <div class="content-bottom">
+        <hr class="hr-footer-bottom">
+        <p>&copy; 2024 Cuzita - Cavendish University Zambia Information Technology Association</p>
+    </div>
+  </footer>  
 </body>
 </html>

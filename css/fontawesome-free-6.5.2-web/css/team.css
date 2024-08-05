@@ -1,18 +1,25 @@
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+    min-height: 50vh;
+    margin: 20px;
 }
 
 header {
-    max-width: 100%;
+    width: 100%;
     display: flex;
+    
 }
 
 .header-container {
    width: 100%;
-   position: fixed;
-   margin-bottom: 100px;
+  z-index: 999;
+  position: fixed;
     
 }
 
@@ -31,6 +38,16 @@ header {
     max-width: 100%;
 }
 
+.header-container img {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-left: auto;
+    position: absolute;
+    left: 17px;
+    bottom: 16px;
+  }
+
 nav a {
     height: 50px;
     padding: 0 30px;
@@ -43,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #111010;
+    background-color: none;
     text-decoration: underline;
     color: #24a4e4;
     border-radius: 2px;
@@ -54,9 +71,9 @@ nav li:first-child {
 }
 
 nav {
-    background-color: white;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    background-color: none;
     width: 100%;
+    height: 20vh;
 }
 
 nav ul {
@@ -98,6 +115,7 @@ nav li {
     position: absolute;
     display: block;
     left: 8px;
+    font-weight: bold;
 }
 
 .sidebar a:hover {
@@ -108,13 +126,13 @@ nav li {
 
 .sidebar .fa-solid {
     position: absolute;
-    right: 18px;
+    left: 18px;
     top: 24px;
     font-size: 25px;
     max-width: 100%;
     margin-right: 14px;
+    display: block;
 }
-
 .hr-sidebar {
     border: 1px solid #1f1d1d;
     margin-top: 22px;
@@ -260,106 +278,107 @@ nav li {
     font-weight: 300;
 }
 
-/* Footer */
-
-footer {
-    background-color: black;
+ /* Footer Styles */
+ footer {
+    background-color: rgb(99, 99, 99);
     color: white;
     width: 100%;
+    padding: 20px; 
+    font-weight: bold;
 }
 
 .about-footer {
     display: flex;
-    padding: 18px;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    padding: 15px 0; 
     width: 100%;
-    margin-left: 10px;
-    
+    gap: 35px;
 }
 
 .contact-content {
-    display: block;
-    margin-bottom: 18px;
-    width: 100%;
-    padding: 15px;
-}
-
-.contact-content a {
-    display: block;
-    text-decoration: none;
-    color: rgb(206, 199, 199);
-    padding: 4px;
-    font-size: 22px;
-}
-
-.contact-content a:hover {
-    background-color: #127eb3;
+    
+    flex: 1; 
 }
 
 .contact-content h1 {
     font-size: 20px;
-}
-
-.follow-content {
-    display: block;
-    margin-bottom: 18px;
-    width: 100%;
-    padding: 15px;
-}
-
-.follow-content i {
+    margin-bottom: 10px;
+    text-align: left;
+    text-decoration: underline;
     padding: 8px;
-    font-size: 22px;
-    color: rgb(206, 199, 199);
 }
 
-.follow-content i:hover {
-    background-color: #127eb3;
+.footer-about-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; 
+    margin: 2px 0; 
+    text-decoration: none;
 }
 
-.follow-content h1 {
+.footer-about-links a {
+    font-size: 26px; 
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s; 
+    padding: 8px;
+}
+
+.footer-about-links a:hover {
+    color: #127eb3;
+    text-decoration: underline;
+}
+
+.follow-content, .footer-about {
+    flex: 1; 
+    margin-bottom: 18px; 
+    padding: 8px;
+}
+
+.follow-content-i {
+    display: flex; 
+    justify-content: left;
+    text-align: left; 
+    gap: 5px; 
+}
+
+.follow-content-i a {
+    text-decoration: none; 
+}
+
+.follow-content-i i {
+    font-size: 24px; 
+    transition: color 0.3s, transform 0.3s; 
+    padding: 8px;
+}
+.follow-content h1, .footer-about h1 {
     font-size: 20px;
-}
-
-.footer-about {
-    display: block;
-    margin-bottom: 18px;
-    width: 100%;
-    padding: 15px;
-}
-
-.footer-about h1 {
-    font-size: 20px;
+    margin-bottom: 10px; 
+    text-align: left;
+    text-decoration: underline;
+    padding: 8px;
 }
 
 .footer-about a {
-    display: block;
-    text-decoration: none;
-    color: rgb(206, 199, 199);
-    padding: 4px;
-    font-size: 22px;
-}
-
-.footer-about a:hover {
-    background-color: #127eb3;
+    display: inline-block; 
+    color: white;
+    padding: 8px;
+    font-size: 24px; 
 }
 
 .content-bottom {
     padding: 8px;
-    text-align: center;
+    text-align: center; 
 }
 
 .content-bottom p {
-    font-size: 24px;
-    color: #f1f1f1;
-} 
+    font-size: 18px;
+    color: white;
+}
 
 .hr-footer {
-    border: 1px solid #f1f1f1;
-    margin-top: 22px;
-    margin-bottom: 22px;
-    width: 80%;
-    display: none;
-    
+    display: block; 
 }
 
 .hr-footer-bottom {
@@ -369,6 +388,58 @@ footer {
     margin-bottom: 18px;
 }
 
+/* Newsletter section styles */
+.newsletter {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.newsletter h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000;
+    text-align: center;
+}
+
+.newsletter p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #127eb3;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.newsletter button[type="submit"] {
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter button[type="submit"]:hover {
+    background-color: #0056b3;
+}
 
 @media screen and (max-width: 800px) {
     .hideOnMobile {
@@ -379,7 +450,12 @@ footer {
         display: block;
         font-size: 25px;
         margin-right: 25px;
+        position: absolute;
+        left: 17px;
+        top: 40px;
+        z-index: 999;
     }
+
 
     li h1 {
         margin-bottom: 10px;
@@ -391,6 +467,11 @@ footer {
 
     .header-container {
         max-width: 100%;
+        position: relative;
+        border: 0px solid #f1f1f1;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2576);
+        margin: none;
+        z-index: 999;
     }
 
     
@@ -405,7 +486,7 @@ footer {
 
 }
 
-@media  screen and (max-width: 600px) {
+@media  screen and (max-width: 1200px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -413,6 +494,15 @@ footer {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
        
     }
+
+    .header-container img {
+        float: right; 
+        margin-right: 10px; 
+        max-width: 150px; 
+        position: absolute;
+        right: 16px;
+        top: 16px;
+      }
 
     .our-team-intro {
         width: 100%;
@@ -540,9 +630,9 @@ footer {
         font-weight: 300;
     }
 
-     /* Footer */
+      /* Footer */
 
-     footer {
+      footer {
         background-color: black;
         color: white;
         max-width: 100%;
