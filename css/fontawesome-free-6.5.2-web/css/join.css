@@ -17,10 +17,19 @@ header {
 }
 
 .header-container {
-   width: 100%;
-  z-index: 999;
- 
-    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2576);
+    z-index: 1000;
+    background-color: #fff; 
+}
+
+.main-container {
+    margin: 10px;
+    padding-top: 100px; 
+    z-index: 1;
+    position: relative;
 }
 
 .header-container h1 {
@@ -39,14 +48,16 @@ header {
 }
 
 .header-container img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     display: block;
     margin-left: auto;
     position: absolute;
     left: 17px;
     top: 16px;
+    /* padding-top: 50px; */
   }
+
 
 nav a {
     height: 50px;
@@ -91,13 +102,13 @@ nav li {
     position: fixed;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.552);
-    backdrop-filter: blur(10px);
+    background-color: #000;
     color: white;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
 }
+
 
 .sidebar li {
     width: 100%;
@@ -154,7 +165,7 @@ nav li {
         margin-right: 25px;
         position: absolute;
         left: 17px;
-        top: 40px;
+        top: 70px;
         z-index: 999;
     }
 
@@ -184,7 +195,7 @@ nav li {
     width: 100%;
     margin-top: 70px;
     display: block;
-    padding: 18px;
+    padding-top: 60px;
 }
 
 .join-intro p {
@@ -228,14 +239,14 @@ nav li {
 
 .content-details a {
    margin: auto;
-   background-color: #000000;
+   background-color: none;
    width: 180px;
    height: 70px;
    display: block;
    border-radius: 6px;
    padding: 15px;
    font-size: 25px;
-   color: white;
+   color: black;
    text-align: center;
    text-decoration: none;
 }
@@ -303,14 +314,14 @@ nav li {
 
 .join-cuzita a {
     margin: auto;
-   background-color: #000000;
+   background-color: none;
    width: 180px;
    height: 70px;
    display: block;
    border-radius: 6px;
    padding: 15px;
    font-size: 25px;
-   color: white;
+   color: black;
    text-align: center;
    text-decoration: none;
 }
@@ -343,14 +354,14 @@ nav li {
 
 .membership-link a  {
     margin: auto;
-    background-color: #000000;
+    background-color: none;
     width: 180px;
     height: 70px;
     display: block;
     border-radius: 6px;
     padding: 15px;
     font-size: 25px;
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: none;
 }
@@ -568,15 +579,36 @@ nav li {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
+    .header-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2576);
+        z-index: 1000;
+        background-color: #fff; 
+    }
+
+    .hr-sidebar {
+        border: 1px solid #f9f9f9;
+        margin-top: 50px;
+    }
+    
+    .main-container {
+        padding-top: 100px; 
+        z-index: 1;
+        position: relative;
+        margin: 10px;
+    }
+
     .header-container img {
         float: right; 
-        margin-right: 10px; 
-        max-width: 150px; 
+        margin-right: 10px;
+        width: 150px;
+        height: 150px; 
         position: absolute;
         right: 16px;
         top: 16px;
       }
-
     .hr-sidebar {
         border: 1px solid #1f1d1d;
         width: 80%;
@@ -626,9 +658,9 @@ nav li {
     }
 
     .content-details a {
-        background-color: #000000;
+        background-color: none;
         width: 180px;
-        color: white;
+        color: black;
         padding: 15px;
         margin-top: 25px;
         border-radius: 6px;
@@ -691,14 +723,14 @@ nav li {
 
     .join-cuzita a {
         margin: auto;
-        background-color: #000000;
+        background-color: none;
         width: 180px;
         height: 70px;
         display: block;
         border-radius: 6px;
         padding: 15px;
         font-size: 25px;
-        color: white;
+        color: black;
         text-align: center;
         text-decoration: none;
     }
@@ -727,14 +759,14 @@ nav li {
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 34px;
+        font-size: 25px;
         list-style-position: inside;
     }
 
     .membership-link a {
-        background-color: #000000;
+        background-color: none;
         width: 240px;
-        color: white;
+        color: black;
         padding: 9px;
         margin-top: 25px;
         border-radius: 6px;
@@ -742,9 +774,9 @@ nav li {
     }
 
     .membership-link a:hover {
-        background-color: #127eb3;
+        background-color: none;
         width: 240px;
-        color: black;
+        color: #127eb3;
         padding: 9px;
         margin-top: 25px;
         border-radius: 6px;

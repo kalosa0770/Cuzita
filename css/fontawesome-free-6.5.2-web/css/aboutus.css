@@ -17,10 +17,19 @@ header {
 }
 
 .header-container {
-   width: 100%;
-  z-index: 999;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2576);
+    z-index: 1000;
+    background-color: #fff; 
+}
 
-    
+.main-container {
+   
+    padding-top: 100px; 
+    z-index: 1;
+    position: relative;
 }
 
 .header-container h1 {
@@ -39,13 +48,14 @@ header {
 }
 
 .header-container img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 150px;
     display: block;
     margin-left: auto;
     position: absolute;
     left: 17px;
     top: 16px;
+    /* padding-top: 50px; */
   }
 
 nav a {
@@ -91,8 +101,7 @@ nav li {
     position: fixed;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.552);
-    backdrop-filter: blur(10px);
+    background-color: #000;
     color: white;
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -421,6 +430,7 @@ nav li {
     padding: 8px;
     width: 100%;
     border: none;
+    margin-top: 100px;
 }
 
 .intro-container p {
@@ -437,6 +447,7 @@ nav li {
     font-size: 30px;
     color: #127eb3;
     font-weight: bold;
+    padding-top: 40px;
 
 }
 
@@ -630,7 +641,7 @@ nav li {
         margin-right: 25px;
         position: absolute;
         left: 17px;
-        top: 40px;
+        top: 70px;
         z-index: 999;
     }
 
@@ -685,25 +696,35 @@ nav li {
         min-height: 20vh;
         margin: 20px;
     }
-     
+    
+    .header-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2576);
+        z-index: 1000;
+        background-color: #fff; 
+    }
+    
+    .main-container {
+        padding-top: 70px; 
+        z-index: 1;
+        position: relative;
+    }
 
-     .header-container img {
+    .header-container img {
         float: right; 
-        margin-right: 10px; 
-        max-width: 150px; 
+        margin-right: 10px;
+        width: 150px;
+        height: 150px; 
         position: absolute;
         right: 16px;
         top: 16px;
       }
-    .hr {
-        border: 1px solid black;
-        margin-top: 22px;
-        width: 80%;
-    }
-    
-    hr {
-        border-width: 50px;
-        margin-top: 22px;
+
+      .hr-sidebar {
+        border: 1px solid #f9f9f9;
+        margin-top: 50px;
     }
 
     .hr-footer {
@@ -879,7 +900,6 @@ nav li {
 
     .intro-container {
         display: block;
-        padding: 8px;
         width: 100%;
         border: none;
         margin-left: 0;
@@ -891,13 +911,17 @@ nav li {
         font-size: 27px;
         font-weight: lighter;
         color: #000;
+        text-align: left;
+        line-height: 1.5;
+        margin: 0;
     } 
 
     .intro-container h1 {
-        margin-left: 10px;
-        font-size: 35px;
+        font-size: 25px;
         color: #127eb3;
         font-weight: bold;
+        text-align: left;
+        margin-bottom: 15px;
       
     }
 
@@ -1100,96 +1124,5 @@ nav li {
     
 }
 
-/* .cuzita-logo img, h3 {
-    width: 200px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 4px;
-    float: right;
-    margin: 20px 40px;
-    
-}
 
-.cuzita-logo {
-    width: 100%;
-    margin-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-} */
-
-/* .container-values {
-    display: block;
-    padding: 8px;
-    width: 100%;
-} */
-
-/* .container-values h1 {
-    text-align: center;
-    font-size: 18px;
-}
-
-.container-values h3 {
-    text-align: left;
-}
-
-.container-values p {
-    padding: 8px;
-    text-align: center;
-} */
-
-/* .container-mission {
-    display: block;
-    padding: 8px;
-    width: 100%;
-    
-    margin-bottom: 35px;
-} */
-
-/* .container-mission p {
-    padding: 8px;
-    text-align: center;
-}
-
-.container-mission h1 {
-    text-align: center;
-    font-size: 18px;
-} */
-
-/* .container-vision {
-    display: block;
-    padding: 8px;
-    width: 100%;
-   
-    margin-bottom: 35px;
-} */
-
-/* .container-vision p {
-    padding: 8px;
-    text-align: center;
-}
-
-.container-vision h1 {
-    text-align: center;
-    font-size: 18px;
-} */
-
-/* .intro-container {
-    display: block;
-    padding: 8px;
-    width: 100%;
-    
-    margin-bottom: 35px;
-} */
-
-/* .intro-container p {
-    padding: 8px;
-    text-align: center;
-}
-
-.intro-container h1 {
-    text-align: center;
-    font-size: 18px;
-} */
 
