@@ -47,7 +47,11 @@ header {
     max-width: 100%;
 }
 
-.header-container img {
+/* nav ul .logo {
+    width: 100%;
+} */
+
+nav ul .logo img {
     width: 150px;
     height: 150px;
     display: block;
@@ -55,8 +59,8 @@ header {
     position: absolute;
     left: 17px;
     top: 16px;
-    /* padding-top: 50px; */
-  }
+    border-radius: 50%;
+}
 
 
 nav a {
@@ -95,7 +99,10 @@ nav ul {
 }
 
 nav li {
-    height: 50px;
+    padding-top: 60px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar {
@@ -600,16 +607,22 @@ nav li {
         margin: 10px;
     }
 
-    .header-container img {
-        float: right; 
-        margin-right: 10px;
-        width: 120px;
-        height: 120px; 
-        border-radius: 50%;
+    nav ul .logo {
+        width: 100%;
+        height: max-content;
+    }
+    
+    nav ul .logo img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin-left: auto;
         position: absolute;
-        right: 16px;
-        top: 16px;
-      }
+        right: 17px;
+        top: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
     .hr-sidebar {
         border: 1px solid #1f1d1d;
         width: 80%;
