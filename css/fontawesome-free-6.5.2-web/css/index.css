@@ -165,7 +165,7 @@ nav li {
     display: block;
 }
 .hr-sidebar {
-    border: 1px solid #1f1d1d;
+    border: 1px solid #f1f1f1;
     margin-top: 22px;
     margin-bottom: 22px;
     width: 80%;
@@ -599,7 +599,7 @@ hr.hr {
     overflow: hidden;
     width: 90%;
     max-width: 1536px;
-    min-height: 450px;
+    height: 450px; 
 }
 
 .team {
@@ -644,6 +644,7 @@ hr.hr {
 .team7 {
     animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
+
 @keyframes scrolling {
     
     to {
@@ -1055,13 +1056,10 @@ hr.hr {
         right: 17px;
         top: 40px;
         border-radius: 50%;
-        object-fit: contain;
+        object-fit: cover;
     }
 
-    .hr-sidebar {
-        border: 1px solid #f9f9f9;
-        margin-top: 50px;
-    }
+   
     .header-container {
         width: 100%;
         position: fixed;

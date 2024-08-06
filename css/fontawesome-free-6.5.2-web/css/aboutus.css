@@ -150,7 +150,7 @@ nav li {
     display: block;
 }
 .hr-sidebar {
-    border: 1px solid #1f1d1d;
+    border: 1px solid #f1f1f1;
     margin-top: 22px;
     margin-bottom: 22px;
     width: 80%;
@@ -736,10 +736,10 @@ nav li {
         object-fit: cover;
     }
 
-      .hr-sidebar {
+      /* .hr-sidebar {
         border: 1px solid #f9f9f9;
         margin-top: 50px;
-    }
+    } */
 
     .hr-footer {
         border: 1px solid #f1f1f1;
