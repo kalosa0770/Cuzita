@@ -603,8 +603,9 @@ nav li {
     .header-container img {
         float: right; 
         margin-right: 10px;
-        width: 70px;
-        height: 700px; 
+        width: 120px;
+        height: 120px; 
+        border-radius: 50%;
         position: absolute;
         right: 16px;
         top: 16px;

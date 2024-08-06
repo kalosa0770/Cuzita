@@ -1029,6 +1029,7 @@ hr.hr {
         position: absolute;
         right: 16px;
         top: 16px;
+        border-radius: 50%;
       }
 
     .hr-sidebar {
