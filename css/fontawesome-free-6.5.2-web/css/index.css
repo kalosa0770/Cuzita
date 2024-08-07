@@ -5,17 +5,16 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-section {
-    min-height: 50vh;
-    margin: 20px;
-}
-
 /* header {
     display: flex;
     position: fixed;
 
     
 } */
+
+body {
+    height: 100vh;
+}
 
 .header-container {
     width: 100%;
@@ -28,7 +27,7 @@ section {
 }
 
 .main-container {
-    padding-top: 100px; 
+    padding-top: 90px; 
     z-index: 1;
     position: relative;
 }
@@ -48,17 +47,7 @@ section {
     max-width: 100%;
 }
 
-/* .header-container img {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    position: absolute;
-    left: 17px;
-    top: 16px;
-    border-radius: 50%;
-    /* padding-top: 50px; *
-  } */
+
 
 nav a {
     height: 50px;
@@ -113,7 +102,6 @@ nav ul .logo img {
 
 nav li {
     padding-top: 60px;
-    text-transform: uppercase;
     align-items: center;
     justify-content: center;
 }
@@ -182,11 +170,10 @@ section {
     /* justify-content: center;
     align-items: center; */
     overflow: hidden;
-    min-height: 40vh;
     width: 100%;
     z-index: -1;
     padding-top: 100px;
-    margin: 5px;
+    
 }
 
 .active {
@@ -197,9 +184,9 @@ section {
 
 
 .sec-1.show-animate h1 {
-    margin-top: 40px;
+    padding-top: 10px;
     text-align: center;
-    font-size: 68px;
+    font-size: 2.5rem;
     color: #127eb3;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
    
@@ -208,7 +195,7 @@ section {
 
 
 .sec-1.show-animate p {
-    font-size: 38px;
+    font-size: 2.8rem;
     color: #000000;
     font-weight: lighter;
     text-align: center;
@@ -236,53 +223,24 @@ section.show-animate .animate {
 
 
 
-/* About Link Button Styles */
-.about-link {
-    display: block;
-    color: #000;
-    border-radius: 18px;
-    text-align: left; 
-    padding: 8px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    margin-top: 20px;
-}
-
-.about-link:hover {
-    background-color: none;
-    color: #127eb3;
-}
-
-.about-link a {
-    display: inline-block; 
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 25px;
-    transition: color 0.3s;
-    text-align: left;
-}
-
-.about-link a:hover {
-    color: #127eb3;
-}
-
 /* About Section Styles */
-.about-cuzita {
+.sec-2 .about-cuzita {
     display: flex;
     flex-direction: column;
+    width: 100%;
     /* justify-content: center;
     align-items: center; */
 }
 
 .sec-2 .about-cuzita p {
-    font-size: 34px;
-    font-weight: bold;
-    color: #000;
-    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    line-height: 1.5;
 }
 
 .about-cuzita hr {
-    border: 1px solid #000;
+    margin-top: 70px;
+    border: 1px solid rgb(212, 210, 210);
 }
 
 
@@ -291,6 +249,7 @@ section.show-animate .animate {
 display: grid;
 grid-template-columns: 5;
 gap: 20px;
+width: 100%;
 }
 
 /* .image-success {
@@ -302,10 +261,9 @@ gap: 20px;
 } */
 
 .success-stories h2 {
-    padding: 8px;
-    font-size: 34px;
+    padding-left: 18px;
+    font-size: 2.4rem;
     font-weight: bold;
-    text-align: center;
     color: #127eb3;
 }
  
@@ -315,7 +273,7 @@ gap: 20px;
 } 
 
 .success-stories p {
-    font-size: 54px;
+    font-size: 2.8rem;
     font-weight: lighter;
     color: black;
     padding: 8px;
@@ -323,11 +281,11 @@ gap: 20px;
 
 
 .success-stories .image-success img {
-    width: 100%;
-    max-width: 530px;
-    margin: 0 50px;
+    width: 400px;
+    height: 400px;
+    margin: 0 30px;
     transform: translateX(-110%);
-    border-radius: 4px;
+    border-radius: 10px;
     transition-delay: calc(.2s * var(--i));
 }
 
@@ -347,7 +305,7 @@ gap: 20px;
     font-size: 2.5em;
     margin-top: 40px;
     color: #127eb3;
-    text-align: center;
+    padding-left: 18px;
     
     font-weight: bold;
     /* text-align: left; */
@@ -355,6 +313,7 @@ gap: 20px;
 }
 .testimonial-img {
     display: block;
+    justify-content: center;
     align-items: center;
     margin: 0 30px;
     background-color: #fff;
@@ -365,8 +324,10 @@ gap: 20px;
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
     object-fit: cover;
-    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  
 }
@@ -391,96 +352,19 @@ gap: 20px;
 }
 
 
-
-.about-cuzita {
-    text-align: center;
-    max-width: 100%;
-}
-
-.container-img {
-    position: relative;
-    width: 100%;
-    margin: auto;
-}
-
-.slideshow-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.mySlides {
-    display: none;
-    position: relative;
-    animation: fade 1.5s;
-    width: 100%;
-}
-
-.mySlides img {
-    width: 100%;
-    border-radius: 10px;
-
-}
-
-.mySlides p {
-    position: absolute;
-    bottom: 15px;
-    left: 20px;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2em;
-    max-width: 80%;
-    text-align: left;
-}
-
-.dots-container {
-    text-align: center;
-    padding: 20px;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-    cursor: pointer;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-hr.hr {
-    border: 0;
-    height: 1px;
-    background: #ccc;
-    margin: 40px 0;
-}
-
-/* Animation */
-@keyframes fade {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
-}
-
 .about-cuzita-offers {
     display: block;
     width: 100%;
-    padding: 18px;
+    padding-top: 18px;
     background-color: rgb(239, 232, 232);
-    min-height: 800px;
-    /* margin-top: 30px;
+    min-height: max-content;
+    margin-top: 30px;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
     align-items: center;
     justify-content: center;
     text-align: center;
+    border-radius: 10px;
     
 }  
 
@@ -495,29 +379,29 @@ hr.hr {
 }
 
 .about-cuzita-offers ul li {
-    font-size: 35px;
+    font-size: 1.8rem;
     font-weight: bold;
     list-style-type: decimal;
     list-style-position: inside;
     margin-right: 0;
     margin-left: 0;
-    padding: 8px;
+    padding-top: 18px;
 
 }
 
 .about-cuzita-offers ul h1 {
-    font-size: 28px;
+    font-size: 1.7rem;
     color: #127eb3;
-    padding: 8px;
+    padding-top: 8px;
 }
 
 .about-cuzita-offers ul p {
-    font-size: 68px;
+    font-size: 2.4rem;
     padding: 8px;
     font-weight: bold;
     margin-top: 15px;
     color: #000000;
-    font-weight: 800;
+    font-weight: lighter;
     text-shadow: none;
 }
 
@@ -531,8 +415,8 @@ hr.hr {
 
 @keyframes offers {
     from {
-        opacity: 0.5;
-        scale: .6;
+        opacity: 0.7;
+        scale: .7;
     }
 
     to {
@@ -549,7 +433,7 @@ hr.hr {
     height: 70px;
     border-radius: 18px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     justify-content: center;
     align-items: center;
     margin: auto;
@@ -562,7 +446,7 @@ hr.hr {
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 1.6rem;
     align-items: center;
     justify-content: center;
     
@@ -598,7 +482,7 @@ hr.hr {
     position: relative;
     overflow: hidden;
     width: 90%;
-    max-width: 1536px;
+    /* max-width: 1536px; */
     height: 450px; 
 }
 
@@ -606,7 +490,7 @@ hr.hr {
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: 250px;
-    min-height: max-content;
+    height: 250px;
     border-radius: 8px;
     left: max(calc(200px * 8));
     animation-name: scrolling;
@@ -616,7 +500,6 @@ hr.hr {
     position: absolute;
     margin-left: 20px;
     margin-right: 20px;
-    padding: 20px;
     
 }
 
@@ -654,12 +537,13 @@ hr.hr {
 
 .team p {
     font-size: 22px;
-    padding: 8px;
+    padding-top: 8px;
 }
 
 .team h1 {
     font-size: 27px;
     font-weight: lighter;
+    padding-top: 8px;
 }
 
 .team img {
@@ -668,6 +552,7 @@ hr.hr {
     height: 110px;
     object-fit: cover;
     object-position: 50% 50%;
+    margin-top: 15px;
 }
 
 /*partners */
@@ -708,9 +593,8 @@ hr.hr {
 }
 
 .gallery p {
-    font-size: 45px;
-    display: block;
-    width: 100%;
+    font-size: 3.5rem;
+    padding-left: 18px;
 }
 
 .gallery h2 {
@@ -721,10 +605,12 @@ hr.hr {
 }
 
 .gallery-link a{
-    padding-top: 8px;
+    padding-top: 18px;
+    padding-left: 18px;
     text-decoration: none;
     color: #127eb3;
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 1.5rem;
 
 }
 
@@ -734,6 +620,7 @@ hr.hr {
     gap: 40px;
     width: 100%;
     margin-bottom: 100px;
+    border-radius: 10px;
 }
 
 .event-img img {
@@ -743,14 +630,7 @@ hr.hr {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* .event-content {
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 100%;
-    cursor: pointer;
-} */
+
 
 .event-content:hover {
     transform: translateY(-10px);
@@ -758,44 +638,42 @@ hr.hr {
 }
 
 .event-content h3 {
-    font-size: 27px;
+    font-size: 1.8rem;
     margin: 10px 0;
-    color: #127eb3;
+    color: #000;
 }
 
 .event-content h4 {
-    font-size: 34px;
+    font-size: 1.8rem;
     margin: 5px 0;
     color: #000;
 }
 
 .event-content p {
-    font-size: 25px;
+    font-size: 1.5rem;
     color: #000;
     margin: 10px 0 20px;
+    font-weight: lighter;
 }
 
 .event-content a {
     display: inline-block;
-    padding: 10px 20px;
+    padding-right: 18px;
     font-size: 25px;
-    color: #000;
+    color: #127eb3;
+    font-weight: bold;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.event-content a:hover {
-    background-color: #0e5f8a;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    color: white;
-}
 
-.hr {
+
+/* .hr {
     border: 1px solid #ddd;
     margin: 20px 0;
     width: 100%;
-} 
+}  */
 
 .sec-5 {
     padding: 50px 20px;
@@ -847,10 +725,11 @@ hr.hr {
 }
 
 .contact-content h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -863,8 +742,9 @@ hr.hr {
 }
 
 .footer-about-links a {
-    font-size: 26px; 
+    font-size: 1.4rem; 
     text-decoration: none;
+    text-transform: lowercase;
     color: white; 
     transition: color 0.3s; 
     padding: 8px;
@@ -893,15 +773,16 @@ hr.hr {
 }
 
 .follow-content-i i {
-    font-size: 24px; 
+    font-size: 1.4rem; 
     transition: color 0.3s, transform 0.3s; 
     padding: 8px;
 }
 .follow-content h1, .footer-about h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px; 
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -909,7 +790,7 @@ hr.hr {
     display: inline-block; 
     color: white;
     padding: 8px;
-    font-size: 24px; 
+    font-size: 1.4rem; 
 }
 
 .content-bottom {
@@ -923,11 +804,10 @@ hr.hr {
 }
 
 .hr-footer {
-    display: block; 
+    display: none; 
 }
 
 .hr-footer-bottom {
-    width: 100%;
     border: 1px solid #f1f1f1;
     margin-top: 22px;
     margin-bottom: 18px;
@@ -974,16 +854,18 @@ hr.hr {
 
 .newsletter button[type="submit"] {
     padding: 10px;
-    font-size: 1em;
+    font-size: 1.4rem;
     color: #fff;
-    background-color: #007bff;
+    background-color: rgb(205, 16, 16);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 50%;
+    margin: auto;
 }
 
 .newsletter button[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #d02626;
 }
 
 @media screen and (max-width: 900px) {
@@ -1037,10 +919,12 @@ hr.hr {
 }
 
 @media screen and (max-width: 1200px) {
-  
-    section {
-        min-height: max-content;
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
     }
+    
     
     nav ul .logo {
         width: 100%;
@@ -1070,20 +954,15 @@ hr.hr {
     }
     
     .main-container {
-        padding-top: 60px; 
         z-index: 1;
         position: relative;
-        margin: 10px;
+        margin: 20px;
+        max-width: 100%;
+        min-height: 100vh;
     }
     ul i {
         display: none;
     }
-
- 
-
- 
-
-
 
 /* Animation Styles */
 section .animate {
@@ -1105,141 +984,45 @@ section.show-animate .animate {
 .sec-1.show-animate p {
     width: 100%;
     display: block;
-    font-size: 30px;
+    font-size: 2rem;
     text-align: left;
 }
 
 .sec-1.show-animate h1 {
-    font-size: 26px;
-    color: #127eb3;
+    font-size: 1.7rem;
+    color: #2c5f79;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     text-align: left;
    
 }
 
-.sec-1.show-animate .animate {
-    transform: translateX(0);
-}
 
-.sec-2 .images img {
-    width: 100%;
-    transform: translateX(100%);
-    transition-delay: calc(.2s * var(--i));
-}
-
-.sec-2.show-animate .images img {
-    transform: translateX(0);
-}
-
-/* About Link Button Styles */
-.about-link {
-    display: block;
-    color: #000;
-    border-radius: 18px;
-    text-align: left; 
-    padding: 8px;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    margin-top: 20px;
-}
-
-.about-link:hover {
-    background-color: none;
-    color: #127eb3;
-}
-
-.about-link a {
-    display: inline-block;
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 25px;
-    transition: color 0.3s;
-    text-align: left;
-}
-
-.about-link a:hover {
-    color: #127eb3;
-}
 /* About Section Styles */
 .about-cuzita {
     display: block;
+    width: 100%;
 }
 
 
     .sec-2 .about-cuzita p {
-        font-size: 22px;
+        font-size: 1.4rem;
         font-weight: lighter;
-        display: block;
-        width: 100%;
-        text-align: left;
+        line-height: 1.5;
+        padding: 8px;
     }
 
 
 
 .about-cuzita hr {
-    border: 0.5px solid #464646;
-    margin: 25px;
-}
-
-/* Slideshow Styles */
-.slideshow-container {
-    position: relative;
-    width: 100%; 
-    max-width: 100%; 
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-
-.mySlides {
-    display: none;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-/* Dot Styles */
-.dots-container {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.dot {
-    height: 15px;
-    width: 15px;
-    margin: 0 5px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.dot:hover, .dot.active {
-    background-color: #717171;
-}
-
-/* Horizontal Rule Styles */
-.hr {
-    border: 1px solid #000;
-    margin-top: 22px;
-    width: 80%;
-    margin-left: 200px;
-    display: none;
+    border: 0.5px solid #f1f1f1;
+    margin-top: 25px;
+    width: 100%;
 }
 
 
     .about-cuzita-offers {
         display: block;
         width: 100%;
-        padding: 8px;
         background-color: rgb(239, 232, 232);
         min-height: max-content;
         margin-top: 30px;
@@ -1257,35 +1040,35 @@ section.show-animate .animate {
     }
 
     .about-cuzita-offers ul li {
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: bold;
         list-style-type: decimal;
         list-style-position: inside;
         margin-left: 10px;
+        text-align: left;
+        padding-left: 20px;
     
     }
 
     .about-cuzita-offers ul h1 {
-        font-size: 20px;
+        font-size: 1.2rem;
         color: #127eb3;
-        padding: 8px;
+        padding-left: 8px;
+        text-align: center;
     }
 
     .about-cuzita-offers ul p {
-        font-size: 28px;
+        font-size: 1.3rem;
         padding: 8px;
-        font-weight: bold;
+        font-weight: lighter;
         margin-top: 15px;
     }
     .about-link-offer  {
         padding-top: 20px;
     }
 
-    #btn-offers:hover {
-        background-color: #000000;
-        color: white;
-        border-radius: 4px;
-        width: 120px;
+    .about-link-offer a {
+        font-size: 1.3rem;
     }
 
     .events {
@@ -1309,17 +1092,18 @@ section.show-animate .animate {
     }
 
     .event-content h3 {
+        font-size: 1.3rem;
         color: #000;
     }
 
     .event-content h4 {
-        font-size: 20px;
+        font-size: 1.3rem;
         font-weight: bold;
     
     }
 
     .event-content p {
-        font-size: 22px;
+        font-size: 1.4rem;
         color: #000000;
         font-weight: bold;
         font-weight: lighter;
@@ -1329,31 +1113,24 @@ section.show-animate .animate {
         text-decoration: none;
         color: #000000;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 1.3rem;
         color: #127eb3;
         margin-bottom: 20px;
     }
 
-    .events hr {
-        display: block;
-        margin: auto;
-        border: 1px solid #000000;
-        margin-top: 50px;
-        width: 100%;
-    }
 
     /* Testimonials */
 .testimonials {
     border-radius: 8px;
     display: block;
-    max-width: 100%;
+    width: 100%;
 }
 .testimonials-block h2 {
-    font-size: 25px;
+    font-size: 1.3rem;
     width: 100%;
     display: block;
     color: #127eb3;
-    text-align: center;
+    text-align: left;
     font-weight: 500;
     margin: 10px;
 
@@ -1364,10 +1141,11 @@ section.show-animate .animate {
     margin-bottom: 30px;
     background-color: #fff;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 .testimonial-img img {
-    width: 120px;
-    height: 120px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px;
@@ -1375,9 +1153,8 @@ section.show-animate .animate {
  
 }
 .testimonial-img p {
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.5;
-    max-width: 600px;
     color: #000;
     margin: 0 auto;
 }
@@ -1395,19 +1172,16 @@ section.show-animate .animate {
 }
 
 .success-stories h2 {
-    font-size: 25px;
-    width: 100%;
-    display: block;
+    font-size: 1.3rem;
     color: #127eb3;
-    text-align: left;
 }
 
 .success-stories p {
-    font-size: 32px;
-    text-shadow: none;
-    font-weight: 500;
+    font-size: 1.8rem;
     width: 100%;
     display: block;
+    font-weight: lighter;
+    text-align: left;
 }
 .success-stories .image-success {
     display: block;
@@ -1424,7 +1198,7 @@ section.show-animate .animate {
     transform: translateX(-110%);
     border-radius: 16px;
     transition-delay: calc(.2s * var(--i));
-    padding: 8px;
+    margin-bottom: 20px;
 }
 
 
@@ -1435,16 +1209,18 @@ section.show-animate .animate {
 }
 .newsletter h1{
     color: #000;
+    font-size: 1.5rem;
 }
 .newsletter p{
     color: #127eb3;
-    font-size: 23px;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 .gallery p {
-    font-size: 30px; 
+    font-size: 1.6rem; 
     line-height: 1.5;
+    text-align: left;
 }
 
    /* Footer */
@@ -1474,11 +1250,11 @@ section.show-animate .animate {
     text-decoration: none;
     color: rgb(206, 199, 199);
     padding: 4px;
-    font-size: 22px;
+    font-size: 1.2rem;
 }
 
 .contact-content h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .follow-content {
@@ -1489,12 +1265,12 @@ section.show-animate .animate {
 
 .follow-content i {
     padding: 8px;
-    font-size: 22px;
+    font-size: 1.2rem;
     color: rgb(206, 199, 199);
 }
 
 .follow-content h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .footer-about {
@@ -1504,7 +1280,7 @@ section.show-animate .animate {
 }
 
 .footer-about h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 
 .footer-about a {
@@ -1512,7 +1288,7 @@ section.show-animate .animate {
     text-decoration: none;
     color: rgb(206, 199, 199);
     padding: 4px;
-    font-size: 22px;
+    font-size: 1.2rem;
 }
 
 .content-bottom {
@@ -1521,7 +1297,7 @@ section.show-animate .animate {
 }
 
 .content-bottom p {
-    font-size: 18px;
+    font-size: 1rem;
     color: #f1f1f1;
 }
 } 

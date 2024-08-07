@@ -100,7 +100,6 @@ nav ul {
 
 nav li {
     padding-top: 60px;
-    text-transform: uppercase;
     align-items: center;
     justify-content: center;
 }
@@ -432,10 +431,11 @@ nav li {
 }
 
 .contact-content h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -448,8 +448,9 @@ nav li {
 }
 
 .footer-about-links a {
-    font-size: 26px; 
+    font-size: 1.4rem; 
     text-decoration: none;
+    text-transform: lowercase;
     color: white; 
     transition: color 0.3s; 
     padding: 8px;
@@ -478,15 +479,16 @@ nav li {
 }
 
 .follow-content-i i {
-    font-size: 24px; 
+    font-size: 1.4rem; 
     transition: color 0.3s, transform 0.3s; 
     padding: 8px;
 }
 .follow-content h1, .footer-about h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px; 
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -494,7 +496,7 @@ nav li {
     display: inline-block; 
     color: white;
     padding: 8px;
-    font-size: 24px; 
+    font-size: 1.4rem; 
 }
 
 .content-bottom {
@@ -508,11 +510,10 @@ nav li {
 }
 
 .hr-footer {
-    display: block; 
+    display: none; 
 }
 
 .hr-footer-bottom {
-    width: 100%;
     border: 1px solid #f1f1f1;
     margin-top: 22px;
     margin-bottom: 18px;
@@ -623,11 +624,11 @@ nav li {
         border-radius: 50%;
         object-fit: cover;
     }
-    .hr-sidebar {
+    /* .hr-sidebar {
         border: 1px solid #1f1d1d;
         width: 80%;
         margin: 10px;
-    }
+    } */
 
     .join-intro {
         width: 100%;
@@ -636,7 +637,7 @@ nav li {
     }
 
     .join-intro p {
-        font-size: 34px;
+        font-size: 1.8rem;
         margin-bottom: 15px;
         font-weight: lighter;
     }
@@ -646,15 +647,15 @@ nav li {
         border-radius: 6px;
         display: block;
         margin: none;
-        height: 400px;
+        height: 100%;
     }
 
     .content-details hr {
-        border: 1px solid #1f1d1d;
-        width: 90%;
+        border: 1px solid #f1f1f1;
+        width: 100%;
         margin-top: 25px;
-        margin-right: auto;
-        margin-left: auto;
+        /* margin-right: auto;
+        margin-left: auto; */
         margin-bottom: 25px;
     }
 
@@ -669,16 +670,19 @@ nav li {
         margin-bottom: 25px;
         text-align: none;
         margin: none;
+        font-size: 1.3rem;
     }
 
     .content-details a {
         background-color: none;
         width: 180px;
         color: black;
+        font-weight: lighter;
         padding: 15px;
-        margin-top: 25px;
+        margin-top: 10px;
         border-radius: 6px;
         text-decoration: none;
+        font-size: 1.4rem;
     }
 
     .why-cuzita {
@@ -688,7 +692,7 @@ nav li {
     }
 
     .why-cuzita h2 {
-        font-size: 18px;
+        font-size: 1.3rem;
         color: #127eb3;
     }
 
@@ -697,8 +701,9 @@ nav li {
     }
 
     .why-cuzita ul p {
-        font-size: 25px;
+        font-size: 1.4rem;
         font-weight: bold;
+        width: 100%;
     }
 
     .cuzita-spotlight {
@@ -727,7 +732,8 @@ nav li {
     }
 
     .spotlight p {
-        font-size: 22px;
+        font-size: 1.2rem;
+        width: 100%;
     }
 
     .join-cuzita {
@@ -743,7 +749,7 @@ nav li {
         display: block;
         border-radius: 6px;
         padding: 15px;
-        font-size: 25px;
+        font-size: 1.5rem;
         color: black;
         text-align: center;
         text-decoration: none;
@@ -751,12 +757,17 @@ nav li {
 
     .join-cuzita p {
         margin-top: 14px;
-        font-size: 27px;
+        font-size: 1.6rem;
     }
 
     .membership {
         padding: 30px;
-        font-size: 23px;
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .membership p {
+        font-size: 1.4rem;
     }
 
     .membership-link {
@@ -773,7 +784,7 @@ nav li {
         align-items: center;
         justify-content: center;
         text-align: center;
-        font-size: 25px;
+        font-size: 1.5rem;
         list-style-position: inside;
     }
 
@@ -782,7 +793,7 @@ nav li {
         width: 240px;
         color: black;
         padding: 9px;
-        margin-top: 25px;
+        margin-top: 10px;
         border-radius: 6px;
         text-decoration: none;
     }
@@ -797,89 +808,82 @@ nav li {
         text-decoration: none;
     }
 
-    /* Footer */
+    
+   /* Footer */
 
-    footer {
-        background-color: black;
-        color: white;
-        max-width: 100%;
-    }
+   footer {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+}
 
-    .about-footer {
-        display: inline-block;
-        padding: 8px;
-        max-width: 100%;
-        margin-left: 10px;
-        
-    }
+.about-footer {
+    display: inline-block;
+    padding: 8px;
+    max-width: 100%;
+    margin-left: 10px;
+    
+}
 
-    .contact-content {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.contact-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .contact-content a {
-        display: block;
-        text-decoration: none;
-        color: rgb(206, 199, 199);
-        padding: 4px;
-        font-size: 22px;
-    }
+.contact-content a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 1.2rem;
+}
 
-    .contact-content h1 {
-        font-size: 20px;
-    }
+.contact-content h1 {
+    font-size: 1.3rem;
+}
 
-    .follow-content {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.follow-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .follow-content i {
-        padding: 8px;
-        font-size: 22px;
-        color: rgb(206, 199, 199);
-    }
+.follow-content i {
+    padding: 8px;
+    font-size: 1.2rem;
+    color: rgb(206, 199, 199);
+}
 
-    .follow-content h1 {
-        font-size: 20px;
-    }
+.follow-content h1 {
+    font-size: 1.3rem;
+}
 
-    .footer-about {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.footer-about {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .footer-about h1 {
-        font-size: 20px;
-    }
+.footer-about h1 {
+    font-size: 1.3rem;
+}
 
-    .footer-about a {
-        display: block;
-        text-decoration: none;
-        color: rgb(206, 199, 199);
-        padding: 4px;
-        font-size: 22px;
-    }
+.footer-about a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 1.2rem;
+}
 
-    .content-bottom {
-        padding: 8px;
-        text-align: center;
-    }
+.content-bottom {
+    padding: 8px;
+    text-align: center;
+}
 
-    .content-bottom p {
-        font-size: 18px;
-        color: #f1f1f1;
-    }
-
-    .hr-footer {
-        border: 1px solid #f1f1f1;
-        margin-top: 22px;
-        margin-bottom: 22px;
-        width: 80%;
-        display: none;
-    }
+.content-bottom p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
 }

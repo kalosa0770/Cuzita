@@ -6,7 +6,7 @@
 }
 
 section {
-    min-height: 50vh;
+    min-height: 30vh;
     margin: 20px;
 }
 
@@ -32,13 +32,7 @@ header {
     position: relative;
 }
 
-.header-container h1 {
-    margin-left: 10px;
-    font-weight: bold;
-    font-size: 25px;
-    top: 16px;
-    position: absolute;
-}
+
 
 .header-container nav ul {
     align-items: center;
@@ -99,9 +93,8 @@ nav ul {
 
 nav li {
     padding-top: 60px;
-    text-transform: uppercase;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .sidebar {
@@ -114,6 +107,7 @@ nav li {
     display: none;
     flex-direction: column;
 }
+
 
 .sidebar li {
     width: 100%;
@@ -144,7 +138,7 @@ nav li {
     position: absolute;
     left: 18px;
     top: 24px;
-    font-size: 25px;
+    font-size: 1.5rem;
     max-width: 100%;
     margin-right: 14px;
     display: block;
@@ -160,12 +154,8 @@ nav li {
     display: none;
 }
 
-.active {
-    background-color: none;
 
-}
-
- .hr {
+ /* .hr {
     border: none;
     margin-top: 100px;
     width: 75%;
@@ -181,16 +171,8 @@ nav li {
    
     margin-top: 22px;
     width: 100%;
-} 
+}  */
 
-.hr-footer {
-    border: 1px solid #f1f1f1;
-    margin-top: 22px;
-    margin-bottom: 22px;
-    width: 80%;
-    display: none;
-    
-}
 
 .hr-footer-bottom {
     width: 100%;
@@ -199,20 +181,8 @@ nav li {
     margin-bottom: 18px;
 }
 
-.cuzita-logo img {
-    width: 100%;
-    /* object-fit: fill;
-    object-position: 100%; */
-    border-radius: 4px;
-    height: 500px;
-    
-}
 
-.cuzita-logo {
-    padding: 8px;
-    width: 100%;
-    margin-top: 15px;  
-}
+
 
 .timeline-section {
     width: 100%;
@@ -220,7 +190,7 @@ nav li {
 
 .timeline-section h1 {
     padding: 8px;
-    font-size: 35px;
+    font-size: 1.7rem;
 }
 
 .timeline {
@@ -229,10 +199,20 @@ nav li {
     border: 0px solid #fff;
     background-color: #f2ebeb;
     animation: journey ease;
-    animation-timeline: scale();
+    animation-timeline: view();
     display: flex;
    
   
+}
+
+@keyframes journey {
+    from {
+        scale: .7;
+    }
+
+    to {
+        scale: 1;
+    }
 }
 
 .timeline-item {
@@ -242,40 +222,47 @@ nav li {
 }
 
 .timeline-item p {
-    font-size: 24px;
+    font-size: 1.4rem;
     padding: 8px;
 }
 
 .timeline-item h2 {
     color: #127eb3;
+    font-size: 1.3rem;
 }
 
 
 .container-values {
     display: block; 
     padding: 8px;
-    width: calc(100% - 60px); 
+    padding-top: 50px;
+    width: max-content; 
     border: none;
+    text-align: left;
+    background-color: none;
+    height: max-content;
     margin-left: auto;
-    margin-right: auto; 
-    text-align: center;
+    margin-right: auto;
 }
 
 .container-values ul {
-    padding: 18;
+    padding-right: 18px;
     margin: 0 auto; 
     list-style-position: inside;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+    
 }
 
 .container-values ul li {
-    font-size: 38px;
+    font-size: 2.5rem;
     font-weight: bold;
     list-style-type: decimal;
-    text-align: justify;
+    text-align: left;
     margin-left: 10px;
-    margin-bottom: 15px; /
+    margin-bottom: 15px; 
+    padding-right: 40px;
 }
 
 .container-values ul .colab {
@@ -287,7 +274,7 @@ nav li {
 
 .container-values h1 {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2.5rem;
     margin-left: 10px;
     color: #127eb3;
     text-align: left;
@@ -296,7 +283,7 @@ nav li {
 
 .container-values del {
     font-weight: bold;
-    font-size: 30px;
+    font-size: 2rem;
     color: #127eb3;
 }
 
@@ -312,20 +299,19 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #127eb3; 
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    
 }
 
 /* CTA Buttons */
 .cta-button {
     display: inline-block;
-    background-color: #ffffff; 
+    
     color: #127eb3; 
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 3.7rem;
     padding: 12px 24px;
     margin: 0 10px; 
     border-radius: 5px;
@@ -359,7 +345,7 @@ nav li {
 .partners .partner-logos {
     display: flex;
     flex-wrap: wrap;
-    margin: 0px 30px;
+    margin: 0px 50px;
     width: 100%;
 }
 
@@ -367,24 +353,25 @@ nav li {
 
 
 .partners .partner-logos img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     max-width: 100%;
+    margin-right: 80px;
+    border-radius: 50%;
 }
 
 .container-mission {
     display: block;
-    padding: 8px;
     width: 100%;
     border: none;
     margin-left: 30px;
     margin-right: 30px;
+    padding-bottom: 100px;
 }
 
 
 .container-mission p {
-    list-style: lower-alpha;
-    font-size: 32px;
+    font-size: 3.6rem;
     font-weight: bold;
     padding: 8px;
     max-width: 100%;
@@ -392,7 +379,7 @@ nav li {
 
 .container-mission h1 {
     margin-left: 10px;
-    font-size: 27px;
+    font-size: 2.3rem;
     color: #127eb3;
 }
 
@@ -407,15 +394,19 @@ nav li {
 
 .container-vision p {
     padding: 8px;
-    font-size: 50px;
+    font-size: 2.5rem;
     max-width: 100%;
+    font-weight: lighter;
+    text-align: center;
+
     
 }
 .container-vision h1 {
     margin-left: 10px;
-    font-size: 30px;
+    font-size: 2.3rem;
     color: #127eb3;
     font-weight: bold;
+    text-align: center;
 }
 
 .membership-link a  {
@@ -442,19 +433,20 @@ nav li {
 
 .intro-container p {
     padding: 8px;
-    font-size: 54px;
+    font-size: 2.3rem;
+    text-align: center;
     font-weight: lighter;
     color: #000;
-
-    max-width: 100%;
+    width: 100%;
 }
 
 .intro-container h1 {
     margin-left: 10px;
-    font-size: 30px;
+    font-size: 2.3rem;
     color: #127eb3;
     font-weight: bold;
     padding-top: 40px;
+    text-align: center;
 
 }
 
@@ -497,10 +489,11 @@ nav li {
 }
 
 .contact-content h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -513,8 +506,9 @@ nav li {
 }
 
 .footer-about-links a {
-    font-size: 26px; 
+    font-size: 1.4rem; 
     text-decoration: none;
+    text-transform: lowercase;
     color: white; 
     transition: color 0.3s; 
     padding: 8px;
@@ -543,15 +537,16 @@ nav li {
 }
 
 .follow-content-i i {
-    font-size: 24px; 
+    font-size: 1.4rem; 
     transition: color 0.3s, transform 0.3s; 
     padding: 8px;
 }
 .follow-content h1, .footer-about h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px; 
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -559,7 +554,7 @@ nav li {
     display: inline-block; 
     color: white;
     padding: 8px;
-    font-size: 24px; 
+    font-size: 1.4rem; 
 }
 
 .content-bottom {
@@ -573,11 +568,10 @@ nav li {
 }
 
 .hr-footer {
-    display: block; 
+    display: none; 
 }
 
 .hr-footer-bottom {
-    width: 100%;
     border: 1px solid #f1f1f1;
     margin-top: 22px;
     margin-bottom: 18px;
@@ -741,12 +735,12 @@ nav li {
         margin-top: 50px;
     } */
 
-    .hr-footer {
+    /* .hr-footer {
         border: 1px solid #f1f1f1;
         margin-top: 22px;
         margin-bottom: 22px;
         width: 80%;
-    }
+    } */
 
     .hr-footer-bottom {
         width: 100%;
@@ -776,34 +770,40 @@ nav li {
         background-color: #127eb3;
         color: white;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
-        margin: auto;
         padding: 8px;
+        margin-top: 70px;
     }
     
     .container-values ul {
         list-style: none; 
         width: 100%;
-        padding: 8px;
         display: block;
+        text-align: left;
+        
     }
     
     .container-values  .colab li {
-        font-size: 27px; 
+        font-size: 1.8rem; 
         margin-bottom: 12px;  
         color: #e6f7ff; 
-        list-style: none;
-        text-transform: uppercase;
-        padding: 8px;
+        list-style-type: decimal;
+        list-style-position: inside;
+        text-transform: lowercase;
+        padding-right: 60px;
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-start;
       
     }
     
     .container-values h1 {
-        font-size: 28px; 
+        font-size: 1.3rem; 
         margin-bottom: 16px; 
         color: #ffffff; 
         text-transform: uppercase;
         letter-spacing: 1.3px;
         margin-top: 20px;
+        text-align: center;
     }
     
     .container-values del {
@@ -815,7 +815,7 @@ nav li {
     }
 
     .container-values .colab {
-        display: flex;
+        display: block;
         width: 100%;
 
     }
@@ -827,19 +827,6 @@ nav li {
     }
   
 
-    .membership-link a  {
-        margin: auto;
-        background-color: #000000;
-        width: 180px;
-        height: 70px;
-        display: block;
-        border-radius: 6px;
-        padding: 15px;
-        font-size: 25px;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-    }
 
    
 
@@ -851,7 +838,7 @@ nav li {
 
     .container-mission {
         display: block;
-        padding: 8px;
+        padding-bottom: 30px;
         width: 100%;
         border: none;
         margin-left: 0;
@@ -859,15 +846,14 @@ nav li {
 
 
     .container-mission p {
-        list-style: lower-alpha;
-        font-size: 25px;
+        font-size: 1.5rem;
         font-weight: bold;
         padding: 8px;
     }
 
     .container-mission h1 {
         margin-left: 10px;
-        font-size: 20px;
+        font-size: 1.3rem;
         color: #127eb3;
         font-weight: bold;
     }
@@ -901,13 +887,13 @@ nav li {
 
     .container-vision p {
         padding: 8px;
-        font-size: 25px;
+        font-size: 1.6rem;
         font-weight: lighter;
     }
 
     .container-vision h1 {
         margin-left: 10px;
-        font-size: 20px;
+        font-size: 1.3rem;
         color: #127eb3;
         font-weight: bold;
     }
@@ -921,8 +907,7 @@ nav li {
     }
 
     .intro-container p {
-        padding: 8px;
-        font-size: 27px;
+        font-size: 1.3rem;
         font-weight: lighter;
         color: #000;
         text-align: left;
@@ -945,7 +930,7 @@ nav li {
 
     .timeline-section h1 {
         padding: 8px;
-        font-size: 35px;
+        font-size: 1.3rem;
     }
 
     .timeline {
@@ -966,7 +951,7 @@ nav li {
     }
 
     .timeline-item p {
-        font-size: 24px;
+        font-size: 1.3rem;
         padding: 8px;
     }
 
@@ -1052,88 +1037,91 @@ nav li {
     }
 
     .partners .partner-logos img {
-        width: 150px;
-        height: 150px;
+        width: 70px;
+        height: 70px;
+        margin-left: 25px;
         max-width: 100%;
     }
 
     /* Footer */
 
-    footer {
-        background-color: black;
-        color: white;
-        max-width: 100%;
-    }
+   /* Footer */
 
-    .about-footer {
-        display: inline-block;
-        padding: 8px;
-        max-width: 100%;
-        margin-left: 10px;
-        
-    }
+   footer {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+}
 
-    .contact-content {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.about-footer {
+    display: inline-block;
+    padding: 8px;
+    max-width: 100%;
+    margin-left: 10px;
+    
+}
 
-    .contact-content a {
-        display: block;
-        text-decoration: none;
-        color: rgb(206, 199, 199);
-        padding: 4px;
-        font-size: 22px;
-    }
+.contact-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .contact-content h1 {
-        font-size: 20px;
-    }
+.contact-content a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 1.2rem;
+}
 
-    .follow-content {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.contact-content h1 {
+    font-size: 1.3rem;
+}
 
-    .follow-content i {
-        padding: 8px;
-        font-size: 22px;
-        color: rgb(206, 199, 199);
-    }
+.follow-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .follow-content h1 {
-        font-size: 20px;
-    }
+.follow-content i {
+    padding: 8px;
+    font-size: 1.2rem;
+    color: rgb(206, 199, 199);
+}
 
-    .footer-about {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.follow-content h1 {
+    font-size: 1.3rem;
+}
 
-    .footer-about h1 {
-        font-size: 20px;
-    }
+.footer-about {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .footer-about a {
-        display: block;
-        text-decoration: none;
-        color: rgb(206, 199, 199);
-        padding: 4px;
-        font-size: 22px;
-    }
+.footer-about h1 {
+    font-size: 1.3rem;
+}
 
-    .content-bottom {
-        padding: 8px;
-        text-align: center;
-    }
+.footer-about a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 1.2rem;
+}
 
-    .content-bottom p {
-        font-size: 18px;
-        color: #f1f1f1;
-    }
+.content-bottom {
+    padding: 8px;
+    text-align: center;
+}
+
+.content-bottom p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
 
     
 }

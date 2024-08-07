@@ -98,7 +98,6 @@ nav ul {
 
 nav li {
     padding-top: 60px;
-    text-transform: uppercase;
     align-items: center;
     justify-content: center;
 }
@@ -158,9 +157,8 @@ nav li {
 .fa-solid {
     display: none;
 }
-
- /* Footer Styles */
- footer {
+  /* Footer Styles */
+  footer {
     background-color: rgb(99, 99, 99);
     color: white;
     width: 100%;
@@ -183,10 +181,11 @@ nav li {
 }
 
 .contact-content h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -199,8 +198,9 @@ nav li {
 }
 
 .footer-about-links a {
-    font-size: 26px; 
+    font-size: 1.4rem; 
     text-decoration: none;
+    text-transform: lowercase;
     color: white; 
     transition: color 0.3s; 
     padding: 8px;
@@ -229,15 +229,16 @@ nav li {
 }
 
 .follow-content-i i {
-    font-size: 24px; 
+    font-size: 1.4rem; 
     transition: color 0.3s, transform 0.3s; 
     padding: 8px;
 }
 .follow-content h1, .footer-about h1 {
-    font-size: 20px;
+    font-size: 1.3rem;
     margin-bottom: 10px; 
     text-align: left;
-    text-decoration: underline;
+    text-decoration: none;
+    text-transform: lowercase;
     padding: 8px;
 }
 
@@ -245,7 +246,7 @@ nav li {
     display: inline-block; 
     color: white;
     padding: 8px;
-    font-size: 24px; 
+    font-size: 1.4rem; 
 }
 
 .content-bottom {
@@ -259,11 +260,10 @@ nav li {
 }
 
 .hr-footer {
-    display: block; 
+    display: none; 
 }
 
 .hr-footer-bottom {
-    width: 100%;
     border: 1px solid #f1f1f1;
     margin-top: 22px;
     margin-bottom: 18px;
@@ -612,7 +612,7 @@ form input[type="text"] {
 
     .form-contact .contact-intro  p{
        margin-top: none;
-       font-size: 35px;
+       font-size: 1.7rem;
        font-weight: lighter;
        width: 100%;
     }
@@ -676,7 +676,7 @@ form input[type="text"] {
         margin-top: 50px;
         border-radius: 6px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 1.5rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
@@ -694,7 +694,7 @@ form input[type="text"] {
         margin-bottom: 25px;
     }
     .form-contact p {
-        font-size: 24px;
+        font-size: 1.3rem;
         padding: 8px;
     }
 
@@ -714,7 +714,7 @@ form input[type="text"] {
     }
 
     .agree p {
-        font-size: 18px;
+        font-size: 1.2rem;
     }
 
     .agree a {
@@ -734,8 +734,9 @@ form input[type="text"] {
 
 
     .container-mission p { 
-        font-size: 25px;
+        font-size: 1.3rem;
         font-weight: lighter;
+        padding: 8px;
     }
 
     .container-mission h1 {
@@ -755,14 +756,17 @@ form input[type="text"] {
     }
 
     .why-cuzita h2 {
-        font-size: 36px;
+        font-size: 1.4rem;
         color: #000;
+        padding-bottom: 10px;
     }
 
    
 
     .why-cuzita ul p {
-        font-size: 25px;
+        font-size: 1.7rem;
+        font-weight: lighter;
+        padding: 8px;
     }
 
     .why-cuzita hr {
@@ -772,90 +776,83 @@ form input[type="text"] {
     }
 
     
-     /* Footer */
+    
+   /* Footer */
 
-     footer {
-        background-color: black;
-        color: white;
-        max-width: 100%;
-    }
+   footer {
+    background-color: black;
+    color: white;
+    max-width: 100%;
+}
 
-    .about-footer {
-        display: inline-block;
-        padding: 8px;
-        max-width: 100%;
-        margin-left: 10px;
-        
-    }
+.about-footer {
+    display: inline-block;
+    padding: 8px;
+    max-width: 100%;
+    margin-left: 10px;
+    
+}
 
-    .contact-content {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.contact-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .contact-content a {
-        display: block;
-        text-decoration: none;
-        color: rgb(206, 199, 199);
-        padding: 4px;
-        font-size: 22px;
-    }
+.contact-content a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 1.2rem;
+}
 
-    .contact-content h1 {
-        font-size: 20px;
-    }
+.contact-content h1 {
+    font-size: 1.3rem;
+}
 
-    .follow-content {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.follow-content {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .follow-content i {
-        padding: 8px;
-        font-size: 22px;
-        color: rgb(206, 199, 199);
-    }
+.follow-content i {
+    padding: 8px;
+    font-size: 1.2rem;
+    color: rgb(206, 199, 199);
+}
 
-    .follow-content h1 {
-        font-size: 20px;
-    }
+.follow-content h1 {
+    font-size: 1.3rem;
+}
 
-    .footer-about {
-        display: block;
-        margin-bottom: 18px;
-        width: 100%;
-    }
+.footer-about {
+    display: block;
+    margin-bottom: 18px;
+    width: 100%;
+}
 
-    .footer-about h1 {
-        font-size: 20px;
-    }
+.footer-about h1 {
+    font-size: 1.3rem;
+}
 
-    .footer-about a {
-        display: block;
-        text-decoration: none;
-        color: rgb(206, 199, 199);
-        padding: 4px;
-        font-size: 22px;
-    }
+.footer-about a {
+    display: block;
+    text-decoration: none;
+    color: rgb(206, 199, 199);
+    padding: 4px;
+    font-size: 1.2rem;
+}
 
-    .content-bottom {
-        padding: 8px;
-        text-align: center;
-    }
+.content-bottom {
+    padding: 8px;
+    text-align: center;
+}
 
-    .content-bottom p {
-        font-size: 18px;
-        color: #f1f1f1;
-    }
-
-    .hr-footer {
-        border: 1px solid #f1f1f1;
-        margin-top: 22px;
-        margin-bottom: 22px;
-        width: 80%;
-        display: none;
-    }
+.content-bottom p {
+    font-size: 1rem;
+    color: #f1f1f1;
+}
 
 }
