@@ -5,287 +5,345 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/index.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <title>Cuzita</title>
+    <style>
+
+        .navbar-brand img{
+            height: 40px;
+            
+        }
+
+        
+        
+    </style>
 </head>
 <body>
     <header>
-        <!-- Navigation Links -->
-        <div class="header-container">
-            <nav>
-                <ul class="sidebar">
-                    <!-- Mobile menu bar -->
-                    <i id="fa-close" class="fa-solid fa-close" onclick="hideSidebar()"></i>
-                    <li><a href="./index.html" title="Home">Home</a></li>
-                    <hr class="hr-sidebar">
-                    <li><a href="./about.html" title="About Cuzita">About Cuzita</a></li>
-                    <hr class="hr-sidebar">
-                    <li><a href="./join.html" title="Be Part">Be Part</a></li>
-                    <hr class="hr-sidebar">
-                    <li><a href="./contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
-                    <hr class="hr-sidebar">
-                    <li><a href="./team.html" title="Our Team">Our Team</a></li>
-                    <hr class="hr-sidebar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" class="rounded-3"></a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link pointer" style="cursor: pointer;" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" href="#">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;">Our team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;">Join us</a>
+                  </li>
+
                 </ul>
-                <ul>
-                    <!-- <li><h1>Cuzita Club</h1></li> -->
-                    <div class="logo">
-                        <img src="./assets/logo.png" alt="">
-                    </div>
-                    <!-- Large Screen bar -->
-                    <!-- <li class="hideOnMobile"><a href="../pages/index.html" title="Home" class="active">Home</a></li> -->
-                    <li class="hideOnMobile"><a href="./index.html" title="Home">Home</a></li>
-                    <li class="hideOnMobile"><a href="./about.html" title="About Cuzita">About Cuzita</a></li>
-                    <li class="hideOnMobile"><a href="./join.html" title="Be Part">Be Part</a></li>
-                    <li class="hideOnMobile"><a href="./contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
-                    <li class="hideOnMobile"><a href="./team.html" title="Our Team">Our Team</a></li>
-                    <i id="fa-bars" class="fa-solid fa-bars" onclick="showSidebar()"></i>
-                </ul>
-            </nav>
-        </div>
+              </div>
+            </div>
+        </nav>
     </header>
     
   
- <div class="main-container">
-      <!-- Introduction of the page -->
-      <section class="sec-1 show-animate">
-        <h1 class="animate">Empowering the next generation of IT leaders.</h1>
-        <p class="animate">Join CUZITA and let it open a gateway for you in this exciting world of Information Technology.</p>
-        
-        <!-- <div class="about-link">
-            <a href="join.html" class="animate">Join now</a>
-        </div> -->
-        
-    </section> 
-    <!-- About Cuzita -->
-    <section class="sec-2">
-        <div class="about-cuzita">
-            <p>
-                Cavendish University Zambia Information Technology Association (Cuzita) is a student-run club at Cavendish Zambia dedicated to fostering IT skills and knowledge among students.
-                We provide a platform for members to learn, network, and collaborate on exciting IT projects.
+ <main class="container mt-5 pt-5">
+    <!-- Introduction of the page -->
+   <div class="bg-primary">
+        <section class="mt-3 bg-body-tertiary shadow p-3 border-0 text-center">
+            <h1 class="display-3 fw-lighter">Empowering the next generation of IT leaders.</h1>
+            <p class="text-muted">Join CUZITA and let it open a gateway for you in this exciting world of Information Technology.</p>
+            <div class="btn btn-primary">
+                <a href="join.html" class="text-decoration-none text-white">Join now</a>
+            </div>  
+        </section> 
+        <!-- About Cuzita -->
+        <section class="container-fluid">
+            <div class="mt-3 bg-tertiary">
+                <p class="text-white">
+                    Cavendish University Zambia Information Technology Association (Cuzita) is a student-run club at Cavendish Zambia dedicated to fostering IT skills and knowledge among students.
+                    We provide a platform for members to learn, network, and collaborate on exciting IT projects.
+                </p>
+                <hr>
+            </div>
+        </section>
+   </div>
+
+    <section class="container mt-3 pt-3">
+        <div class="bg-light m-2 p-3 rounded">
+            <h2 class="text-success fs-1 fw-lighter">The Beauty of working hard</h2>
+            <p class="fs-3">
+                The key in working hard begins in one self. See the people who have gone on to achieve great things in the IT industry. 
+                Their journeys can inspire and guide you as you navigate your own career path.
             </p>
-            <hr>
+        </div>
+        <div class="row align-items-center justify-content-center g-4">
+            <div class="col-12 col-md-4">
+                <img src="./assets/achievements-1.jpg" alt="Achievement" class="img-fluid rounded d-block mx-auto">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="./assets/collab.jpg" alt="Collaboration" class="img-fluid rounded d-block mx-auto">
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="./assets/robotics-1.jpg" alt="Robotics" class="img-fluid rounded d-block mx-auto">
+            </div>
         </div>
     </section>
 
-    <section class="success-stories">
-        <h2>The Beauty of working hard</h2>
-        <p>
-            The key in working hard begins in one self. See the people who have gone on to achieve great things in the IT industry. 
-            Their journeys can inspire and guide you as you navigate your own career path.
-        </p>
-        <div class="image-success">
-            <img src="./assets/achievements-1.jpg" alt="" class="animate" style="--i:0">
-            <img src="./assets/collab.jpg" alt="" class="animate" style="--i:1">
-            <img src="./assets/robotics-1.jpg" alt="" class="animate" style="--i:2">
-        </div>
-    </section>
-
-    <!--Testimonial place-->
-   <section class="testimonials-block">
-    <h2>Member Testimonials</h2>
-    <div class="testimonials">
-        
-        <div class="testimonial-img">
-            <img src="./assets/lady-suc.jpg" alt="">
-            <p>Cuzita has been an incredible platform for me to learn and grow. The workshops and projects have significantly enhanced my technical skills. - Denise</p>
-        </div>
-        <div class="testimonial-img">
-            <img src="./assets/lady-laugh.jpeg" alt="">
-            <p>Being part of Cuzita helped me land an internship at a top tech company. The networking opportunities were invaluable. - Alinase</p>
-        </div>
-        <div class="testimonial-img">
-            <img src="./assets/Success-Entreprenuer.jpeg" alt="">
-            <p>Going through the phases of mentorship as being a round of turning points for me in the tech industry. - John</p>
-        </div>
-    </div>
-   </section>
-
-   <section class="sec-4">
-        <div class="about-cuzita-offers">
-            <ul class="offers">
-                <h1>We Offer</h1>
-                <li>Networking Opportunities</li>
-                <li>Cuzita spotlight</li>
-                <li>Cuzita IT challenges</li>
-                <li>Web Development</li>
-                <li>UI/UX Design</li>
-                <li>Programming Languages</li>
-                <li>CyberSecurity</li>
-                <li>Collaboration skills</li>
-                <p>Interested in being part?</p>
-                <div class="about-link-offer">
-                    <a href="./join.html">Join now</a>
+    <section class="container-fluid mt-3 pt-3">
+        <div class="bg-primary p-3">
+            <ul class="container text-white list-group">
+                <h1 class="text-center">We Offer</h1>
+                <li class="list-group-item">Networking Opportunities</li>
+                <li class="list-group-item">Cuzita spotlight</li>
+                <li class="list-group-item">Cuzita IT challenges</li>
+                <li class="list-group-item">Web Development</li>
+                <li class="list-group-item">UI/UX Design</li>
+                <li class="list-group-item">Programming Languages</li>
+                <li class="list-group-item">CyberSecurity</li>
+                <li class="list-group-item">Collaboration skills</li>
+                <p class="fs-4 fw-bold text-center pt-3">Interested in being part?</p>
+                <div class="mx-auto ">
+                    <a href="./join.html" class="btn btn-success text-white">Join now</a>
                 </div>
             </ul>
         </div>
     </section>
 
+    <!--Testimonial place-->
+    <section class="container-fluid py-5">
+        <h2 class="text-center mb-4">Member Testimonials</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <img src="./assets/lady-suc.jpg" 
+                                 alt="Denise" 
+                                 class="card-img rounded-circle mb-3 mb-md-0 me-md-3" 
+                                 style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="text-center text-md-start">
+                                <p class="card-text mb-0">
+                                    "Cuzita has been an incredible platform for me to learn and grow. 
+                                    The workshops and projects have significantly enhanced my technical skills."
+                                </p>
+                                <p class="text-muted mt-2 mb-0">- Denise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <img src="./assets/lady-laugh.jpeg" 
+                                 alt="Alinase" 
+                                 class="card-img rounded-circle mb-3 mb-md-0 me-md-3" 
+                                 style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="text-center text-md-start">
+                                <p class="card-text mb-0">
+                                    "Being part of Cuzita helped me land an internship at a top tech company.
+                                    The networking opportunities were invaluable."
+                                </p>
+                                <p class="text-muted mt-2 mb-0">- Alinase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <img src="./assets/Success-Entreprenuer.jpeg" 
+                                 alt="John" 
+                                 class="card-img rounded-circle mb-3 mb-md-0 me-md-3" 
+                                 style="width: 120px; height: 120px; object-fit: cover;">
+                            <div class="text-center text-md-start">
+                                <p class="card-text mb-0">
+                                    "Going through the phases of mentorship has been a round
+                                    of turning points for me in the tech industry."
+                                </p>
+                                <p class="text-muted mt-2 mb-0">- John</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
  
-    
-    <!-- Slideshow of events hosted by Cuzita -->
- 
-    
-    <!-- Video explaining about Cuzita -->
 
 
-    <!--Stories section-->
-
-
-    <section>
-        <div class="team-animate">
-            <div class="team team0">
-                <h1>President</h1>
-                <p>Denise Seti</p>
-                <img src="./assets/denise.jpg" alt="">
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold">Meet Our Team</h2>
             </div>
-            <div class="team team1">
-                <h1>Vice President</h1>
-                <p>Elijah Kalosa</p>
-                <img src="./assets/elijah.jpg" alt="">
-            </div>
-            <div class="team team2">
-                <h1>Secretary</h1>
-                <p>Micheal</p>
-                <img src="./assets/micheal.jpg" alt="">
-            </div>
-            <div class="team team3">
-                <h1>Vice Secretary</h1>
-                <p>Recheal</p>
-                <img src="./assets/lady-suc.jpg" alt="">
-            </div>
-            <div class="team team4">
-                <h1>Media Personnel</h1>
-                <p>Christian</p>
-                <img src="./assets/christian.jpg" alt="">
-            </div>
-            <div class="team team5">
-                <h1>Treasurer</h1>
-                <p>Peter</p>
-                <img src="./assets/Work-at-CCA-Photo-2.jpeg" alt="">
-            </div>
-            <div class="team team6">
-                <h1>Co Founder</h1>
-                <p>Narco Shilukukwa</p>
-                <img src="./assets/narco.jpg" alt="">
-            </div>
-            <div class="team team7">
-                <h1>Co Founder</h1>
-                <p>Samuel Kapasa</p>
-                <img src="./assets/peace w3.jpg" alt="">
-            </div>
-           
-        </div>
-    </section>
-
-    
-
-    <section class="gallery">
-        <p>A showcase of photos and videos from our past events, workshops, and hackathons are in the books. See what we've been up to and get a glimpse of the vibrant community at Cuzita.</p>
-        <div class="gallery-link">
-            <a href="./about.html">Read more</a>
-        </div>
-    </section>
-
-    
-    <!-- Upcoming Events Section -->
-     <section>
-            <div class="events">
-                <div class="event-content">
-                    <div class="event-img">
-                        <img src="/assets/robotics.jpg" alt="Hackathons">
+            <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <div class="team p-4">
+                            <img src="./assets/denise.jpg" alt="Denise Seti" class="rounded-circle img-fluid mb-3 border shadow" style="max-width: 150px;">
+                            <h5 class="fw-semibold">President</h5>
+                            <p class="text-muted">Denise Seti</p>
+                        </div>
                     </div>
-                    <h3>Hackathons</h3>
-                    <h4>
-                        Date: 17th August 2024<br>
-                        Time: 10:00 - 17:00
-                    </h4>
-                    <p>Be part of the upcoming hackathons held at Cavendish University Zambia.</p>
-                    <a href="./join.html">Read more</a>
-                </div>
-                <div class="event-content">
-                    <div class="event-img">
-                        <img src="./assets/member-img.jpg" alt="Coding Night">
+                    <div class="carousel-item">
+                        <div class="team p-4">
+                            <img src="./assets/elijah.jpg" alt="Elijah Kalosa" class="rounded-circle img-fluid mb-3 border shadow" style="max-width: 150px;">
+                            <h5 class="fw-semibold">Vice President</h5>
+                            <p class="text-muted">Elijah Kalosa</p>
+                        </div>
                     </div>
-                    <h3>Coding Night</h3>
-                    <h4>
-                        Date: 29th September 2024<br>
-                        Time: 17:00 - 20:00
-                    </h4>
-                    <p>Experience the atmosphere that comes out from the best of the best software developers.</p>
-                    <a href="./join.html">Read more</a>
-                </div>
-                <div class="event-content">
-                    <div class="event-img">
-                        <img src="./assets/member-2.jpg" alt="Java Bootcamp">
+                    <div class="carousel-item">
+                        <div class="team p-4">
+                            <img src="./assets/micheal.jpg" alt="Micheal Matanda" class="rounded-circle img-fluid mb-3 border shadow" style="max-width: 150px;">
+                            <h5 class="fw-semibold">Secretary General</h5>
+                            <p class="text-muted">Micheal Matanda</p>
+                        </div>
                     </div>
-                    <h3>Java Bootcamp</h3>
-                    <h4>
-                        Date: 22 August 2024 - 27 August 2024<br>
-                        Time: 13:00 - 17:00
-                    </h4>
-                    <p>Your zeal in technology is fascinating! Attend a bootcamp for Java to unlock your full potential.</p>
-                    <a href="./join.html">Read more</a>
+                    <div class="carousel-item">
+                        <div class="team p-4">
+                            <img src="./assets/lady-laugh.jpeg" alt="Esther Moono" class="rounded-circle img-fluid mb-3 border shadow" style="max-width: 150px;">
+                            <h5 class="fw-semibold">Chief Information Officer</h5>
+                            <p class="text-muted">Esther Moono</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="team p-4">
+                            <img src="./assets/boy.jpg" alt="Steven" class="rounded-circle img-fluid mb-3 border shadow" style="max-width: 150px;">
+                            <h5 class="fw-semibold">IT Director</h5>
+                            <p class="text-muted">Steven Sengimana</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="team p-4">
+                            <img src="./assets/lady-suc.jpg" alt="Miya Michelle" class="rounded-circle img-fluid mb-3 border shadow" style="max-width: 150px;">
+                            <h5 class="fw-semibold">Chief Treasurer</h5>
+                            <p class="text-muted">Precious Banda</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="team p-4">
+                            <img src="./assets/robotics.jpg" alt="Anna Agatha" class="rounded-circle img-fluid mb-3 border shadow" style="max-width: 150px;">
+                            <h5 class="fw-semibold">Marketing Director</h5>
+                            <p class="text-muted">Anna Agatha</p>
+                        </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark p-3 rounded-circle" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next btn-dark" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark p-3 rounded-circle" aria-hidden="true"></span>
+                </button>
             </div>
+        </div>
     </section>
-
-    <section>
-        <div class="newsletter">
-            <h1>NEWSLETTER</h1>
-            <p>Stay updated with our latest news and events. Subscribe to our newsletter!</p>
-            <form action="../subscribe" method="post">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-        </div>
-    </section>
-
- </div>
     
-    <!-- Footer Section -->
-    <footer>
-        <div class="about-footer">
-            <div class="contact-content">
-                <h1>LINKS</h1>
-                <div class="footer-about-links">
-                    <a href="./contact.html">Contact</a>
-                    <a href="./join.html">Join</a>
-                    <a href="./events.html">Events</a>
-                    <a href="./resources.html">Resources</a>
-                </div>
-            </div>
-            <hr class="hr-footer">
-            <div class="follow-content">
-                <h1>SOCIAL MEDIA</h1>
-                <div class="follow-content-i">
-                    <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #127eb3;"></i></a>
-                    <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(22, 150, 22);"></i></a>
-                    <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram" style="color: maroon;"></i></a>
-                    <a href="https://www.twitter.com/Cuzita" target="_blank"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
-                    <a href="https://www.linkedin.com/company/Cuzita" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #0e76a8;"></i></a>
-                </div>
-            </div>
-            <hr class="hr-footer">
-            <div class="footer-about">
-                <h1>CLUB</h1>
-                <div class="footer-about-links">
-                    <a href="./about.html">About</a>
-                    <a href="./team.html">Team</a>
-                    <a href="./index.html">Home</a>
-                    <a href="./faq.html">FAQ</a>
-                    <a href="./blog.html">Blog</a>
-                </div>
-            </div>
-        </div>
-      
-        <div class="content-bottom">
-            <hr class="hr-footer-bottom">
-            <p>&copy; 2024 Cuzita - Cavendish University Zambia Information Technology Association</p>
-        </div>
-    </footer>
+
     
+
+   <!-- Gallery Section -->
+<section class="gallery py-5 text-center">
+    <div class="container">
+        <p class="lead fs-1 fw-lighter">A showcase of photos and videos from our past events, workshops, and hackathons are in the books. See what we've been up to and get a glimpse of the vibrant community at Cuzita.</p>
+        <div class="gallery-link mt-3">
+            <a href="./about.html" class="btn btn-primary">Explore</a>
+        </div>
+    </div>
+</section>
+
+<!-- Upcoming Events Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center fw-bold mb-4">Upcoming Events</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow border-0">
+                    <img src="/assets/robotics.jpg" class="card-img-top" alt="Hackathons">
+                    <div class="card-body text-center">
+                        <h3 class="fw-semibold">Hackathons</h3>
+                        <h4 class="text-muted">Date: 17th August 2024<br>Time: 10:00 - 17:00</h4>
+                        <p class="card-text">Be part of the upcoming hackathons held at Cavendish University Zambia.</p>
+                        <a href="./join.html" class="btn btn-outline-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow border-0">
+                    <img src="./assets/member-img.jpg" class="card-img-top" alt="Coding Night">
+                    <div class="card-body text-center">
+                        <h3 class="fw-semibold">Coding Night</h3>
+                        <h4 class="text-muted">Date: 29th September 2024<br>Time: 17:00 - 20:00</h4>
+                        <p class="card-text">Experience the atmosphere that comes out from the best of the best software developers.</p>
+                        <a href="./join.html" class="btn btn-outline-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow border-0">
+                    <img src="./assets/member-2.jpg" class="card-img-top" alt="Java Bootcamp">
+                    <div class="card-body text-center">
+                        <h3 class="fw-semibold">Java Bootcamp</h3>
+                        <h4 class="text-muted">Date: 22nd - 27th August 2024<br>Time: 13:00 - 17:00</h4>
+                        <p class="card-text">Your zeal in technology is fascinating! Attend a bootcamp for Java to unlock your full potential.</p>
+                        <a href="./join.html" class="btn btn-outline-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Newsletter Section -->
+<section class="bg-primary text-white py-5 text-center">
+    <div class="container">
+        <h1 class="fw-bold">NEWSLETTER</h1>
+        <p class="lead">Stay updated with our latest news and events. Subscribe to our newsletter!</p>
+        <form action="../subscribe" method="post" class="d-flex justify-content-center">
+            <input type="email" name="email" class="form-control w-50 me-2" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn-light fw-bold">Subscribe</button>
+        </form>
+    </div>
+</section>
+ </main>
+
+<!-- Footer Section -->
+<footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="text-center  text-md-start">
+            <!-- Social Media -->
+            <div class="mx-auto text-center">
+                <h5 class="fw-bold">Follow us</h5>
+                <div class="d-flex justify-content-center  gap-3">
+                    <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f fa-lg text-white"></i></a>
+                    <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp fa-lg text-white"></i></a>
+                    <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram fa-lg text-white"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <p class="text-center">&copy; 2025 Cuzita - Cavendish University Zambia Information Technology Association</p>
+    </div>
+</footer>
+
 
     <script src="./css/fontawesome-free-6.5.2-web/js/index.js"></script>
 </body>
