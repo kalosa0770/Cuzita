@@ -5,212 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/aboutus.css">
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     
     <title>About Us</title>
+    <style>
+
+      .navbar-brand img{
+          height: 40px;
+          
+      }
+
+      
+      
+  </style>
 </head>
 <body>
 
     <header>
-       <!-- Navigation Links -->
-       <div class="header-container">
-          <nav>
-              <ul class="sidebar">
-                <!-- Mobile menu bar -->
-                <i id="fa-close" class="fa-solid fa-close" onclick="hideSidebar()"></i>
-                <li><a href="./index.html" title="Home">Home</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./about.html" title="About Cuzita">About Cuzita</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./join.html" title="Be Part">Be Part</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./team.html" title="Our Team">Our Team</a></li>
-                <hr class="hr-sidebar">
-              </ul> 
-              <ul>
-                <!-- <li><h1>Cuzita Club</h1></li> -->
-                <div class="logo">
-                  <img src="./assets/logo.png" alt="">
-              </div>
-                <!-- Large Screen bar -->
-                <li class="hideOnMobile"><a href="./index.html" title="Home" class="active">Home</a></li>
-                <li class="hideOnMobile"><a href="./about.html" title="About Cuzita">About Cuzita</a></li>
-                <li class="hideOnMobile"><a href="./join.html" title="Be Part">Be Part</a></li>
-                <li class="hideOnMobile"><a href="./contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
-                <li class="hideOnMobile"><a href="./team.html" title="Our Team">Our Team</a></li>
-                <i id="fa-bars" class="fa-solid fa-bars" onclick="showSidebar()"></i>
-              </ul>  
-          </nav>
-        </div>
-    </header>
-    <div class="main-container">
-      
-    <main>
-      <!-- Introduction Section -->
-      <section>
-        <div class="intro-container">
-          <h1>About Cuzita</h1>
-         
-          <div class="intro-img">
-            <img src="./assets/cuzita-member.jpg" alt="Cuzita Group Photo">
-          </div>
-          <p>
-            CUZITA is a dynamic, student-driven community committed to enhancing IT knowledge and practical skills among students. Our club provides a 
-            collaborative environment for members to engage in hands-on projects, gain valuable industry insights, and develop their professional networks.
-          </p>
-        </div>
-      </section>
-      <section>         
-        <!-- Interactive Timeline Section -->
-        <div class="timeline-section">
-          
-          <div class="timeline">
-            <!-- <h1>Our Journey</h1> -->
-            <div class="timeline-item">
-              <h2>2021</h2>
-              <p>Cuzita is founded by a group of passionate IT students.</p>
-            </div>
-            <div class="timeline-item">
-              <h2>2022</h2>
-              <p>Came out second in our first appearance at the hackathons that was help at unza.</p>
-            </div>
-            <div class="timeline-item">
-              <h2>2024</h2>
-              <p>Launched our first mobile app developed by Cuzita members.</p>
-            </div>
-            <div class="timeline-item">
-              <h2>2024</h2>
-              <p>Partnered with leading tech companies to offer internships to our members.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+          <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" class="rounded-3"></a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link pointer" style="cursor: pointer;" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="cursor: pointer;" href="about.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="cursor: pointer;">Our team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="cursor: pointer;">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="cursor: pointer;">Join us</a>
+                </li>
 
-      <section>
+              </ul>
+            </div>
+          </div>
+      </nav>
+  </header>
+        
+    <main class="container-fluid">
+        <!-- Introduction Section -->
+        <section class="container-fluid mt-5 pt-2">
+          <div class="mt-5 pt-3">
+            <p class="text-muted fs-2 text-start w-100 container">
+              CUZITA is a dynamic, student-driven community committed to enhancing IT knowledge and practical skills among students. Our club provides a 
+              collaborative environment for members to engage in hands-on projects, gain valuable industry insights, and develop their professional networks.
+            </p>
+          </div>
+        </section>
+
+        <section>
           <!-- Vision Section -->
-        <div class="container-vision">
-          <h1>Our Vision</h1>
-          <p>To empower the next generation of IT innovators and leaders.</p>
-          <p>To bridge the gap between theoretical knowledge and practical application.</p>
-          <hr class="hr">
-        </div>
-      </section>
-
-      <section>      
-        <!-- Mission Section -->
-        <div class="container-mission">
-          <h1>Our Mission</h1>
-          <p>We strive to create a dynamic and inclusive environment where members can develop their technical skills, explore their interests, and 
-            collaborate on creative projects.</p>
-          <hr class="hr">
-        </div>
-      </section>
-
-      <section>
-        <!-- Values Section -->
-        <div class="container-values">
-          <h1>Our <del>values</del> behaviors</h1>
-          <ul>
-            <div class="colab">
-              <i ></i>
-              <li><strong>Collaboration</strong> <!--Working together to achieve common goals--></li>
+          <div class="container-fluid w-100 bg-light p-3">
+            <div class="d-flex">
+              <h1 class="text-dark">Our vision</h1>
+              <i class="fas fa-umbrella pt-3 ms-2 fs-3"></i>
             </div>
-            <div class="colab">
-              <i ></i> 
-              <li><strong>Creativity</strong> <!--Encouraging innovation and out-of-the-box thinking.--></li>
-            </div>
-            <div class="colab">
-              <i  ></i> 
-              <li><strong>Inclusivity</strong><!---- Welcoming diverse perspectives and ensuring everyone has a voice.--></li>
-            </div>
-            <div class="colab">
-              <i  ></i> 
-              <li><strong>Excellence</strong> <!--Striving for the highest standards in all our endeavors.--></li>
-            </div>
-            <div class="colab">
-              <i></i> 
-              <li><strong>Integrity</strong> <!--Upholding ethical practices and transparency in all activities.--></li>
-            </div>
-          </ul>
-        </div>
-      </section>
+            <p>
+              To empower the next generation of IT innovators and leaders.
+            </p>
+            <p>
+              To bridge the gap between theoretical knowledge and practical application.
+            </p>
+            <p>To create a dynamic and inclusive environment where members 
+              can develop their technical skills, explore their interests, and 
+              collaborate on creative projects.
+            </p>
+            <hr class="hr">
+          </div>
+        </section>
+        <section class="py-5 bg-light">
+          <div class="container">
+              <h1 class="text-center fw-bold">Our <del>Values</del> Behaviors</h1>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item d-flex align-items-center">
+                      <i class="fas fa-users text-primary me-2"></i>
+                      <strong class="text-primary">Collaboration</strong> 
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                      <i class="fas fa-lightbulb text-primary me-2"></i>
+                      <strong class="text-primary">Creativity</strong> 
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                      <i class="fas fa-handshake text-primary me-2"></i>
+                      <strong class="text-primary">Inclusivity</strong> 
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                      <i class="fas fa-star text-primary me-2"></i>
+                      <strong class="text-primary">Excellence</strong> 
+                  </li>
+                  <li class="list-group-item d-flex align-items-center">
+                      <i class="fas fa-shield-alt text-primary me-2"></i>
+                      <strong class="text-primary">Integrity</strong> 
+                  </li>
+              </ul>
+          </div>
+        </section>
 
-   
-
-     <section>
-       <!-- Call-to-Action Section -->
-       <div class="cta-section">
-        <a href="./join.html" class="cta-button">Join Us</a>
-        <a href="./contact.html" class="cta-button">Contact Us</a>
-      </div>
-     </section>
-
-     <section>
-      <div class="partners">
-        <h2>Partnered with:</h2>
-        <div class="partner-logos">
-          <img src="./assets/genius-logo.jpeg" alt="" class="animate" style="--i:0">
-          <img src="./assets/logo.png" alt="" class="animate" style="--i:1">
-          <img src="./assets/cuz.jpeg" alt="" class="animate" style="--i:2">
-          <img src="./assets/cisco.jpeg" alt="" class="animate" style="--i:3">
-        </div>
-      </div>
-     </section>
-
+        <section class="py-5 bg-light">
+          <div class="container text-center">
+              <h2 class="fw-bold mb-4">Partnered with:</h2>
+              <div class="row justify-content-center">
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="./assets/genius-logo.jpeg" class="img-fluid rounded shadow" alt="Genius Logo">
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="./assets/logo.png" class="img-fluid rounded shadow" alt="Partner Logo">
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="./assets/cuz.jpeg" class="img-fluid rounded shadow" alt="CUZ Logo">
+                  </div>
+                  <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-3">
+                      <img src="./assets/cisco.jpeg" class="img-fluid rounded shadow" alt="Cisco Logo">
+                  </div>
+              </div>
+          </div>
+        </section>
     </main>
-    </div>
-    
- <!-- Footer Section -->
- <footer>
-  <div class="about-footer">
-      <div class="contact-content">
-          <h1>LINKS</h1>
-          <div class="footer-about-links">
-              <a href="./contact.html">Contact</a>
-              <a href="./join.html">Join</a>
-              <a href="./events.html">Events</a>
-              <a href="./resources.html">Resources</a>
-          </div>
-      </div>
       
-      <div class="follow-content">
-          <h1>SOCIAL MEDIA</h1>
-          <div class="follow-content-i">
-              <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #127eb3;"></i></a>
-              <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(22, 150, 22);"></i></a>
-              <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram" style="color: maroon;"></i></a>
-              <a href="https://www.twitter.com/Cuzita" target="_blank"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
-              <a href="https://www.linkedin.com/company/Cuzita" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #0e76a8;"></i></a>
-          </div>
-      </div>
-   
-      <div class="footer-about">
-          <h1>CLUB</h1>
-          <div class="footer-about-links">
-              <a href="./about.html">About</a>
-              <a href="./team.html">Team</a>
-              <a href="./index.html">Home</a>
-              <a href="./faq.html">FAQ</a>
-              <a href="./blog.html">Blog</a>
-          </div>
-      </div>
-  </div>
-  <!-- <div class="newsletter">
-      <h1>NEWSLETTER</h1>
-      <p>Stay updated with our latest news and events. Subscribe to our newsletter!</p>
-      <form action="../subscribe" method="post">
-          <input type="email" name="email" placeholder="Enter your email" required>
-          <button type="submit">Subscribe</button>
-      </form>
-  </div> -->
-  <div class="content-bottom">
-      <hr class="hr-footer-bottom">
-      <p>&copy; 2024 Cuzita - Cavendish University Zambia Information Technology Association</p>
-  </div>
-</footer>
-
-<script src="./css/fontawesome-free-6.5.2-web/js/about.js"></script>
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+        <div class="text-center  text-md-start">
+            <!-- Social Media -->
+            <div class="mx-auto text-center">
+                <h5 class="fw-bold">Follow us</h5>
+                <div class="d-flex justify-content-center  gap-3">
+                    <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f fa-lg text-white"></i></a>
+                    <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp fa-lg text-white"></i></a>
+                    <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram fa-lg text-white"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <p class="text-center">&copy; 2025 Cuzita - Cavendish University Zambia Information Technology Association</p>
+    </div>
+  </footer>
 </body>
 </html>
