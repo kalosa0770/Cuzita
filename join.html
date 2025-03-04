@@ -5,152 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/all.min.css">
-    <link rel="stylesheet" href="./css/fontawesome-free-6.5.2-web/css/join.css">
-    <script src="./css/fontawesome-free-6.5.2-web/js/index.js"></script>
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
     <title>Be Part</title>
+    <style>
+
+        .navbar-brand img{
+            height: 40px;
+            
+        }
+  
+        
+        
+    </style>
 </head>
 <body>
     <header>
-        <!--Navigation Links-->
-       <div class="header-container">
-          <nav>
-              <ul class="sidebar">
-                <!--Mobile menu bar-->
-                <i id="fa-close" class="fa-solid fa-close" onclick=hideSidebar()></i>
-                <li><a href="./index.html" title="Home">Home</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./about.html" title="About Cuzita">About Cuzita</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./join.html" title="Be Part">Be Part</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
-                <hr class="hr-sidebar">
-                <li><a href="./team.html" title="Our Team">Our Team</a></li>
-                <hr class="hr-sidebar">
-              </ul> 
-              <ul>
-                <!-- <li><h1>Cuzita Club</h1></li> -->
-                <div class="logo">
-                    <img src="./assets/logo.png" alt="">
-                </div>
-                <!--Large Screen bar-->
-                <li class="hideOnMobile"><a href="./index.html" title="Home" class="active">Home</a></li>
-                <li class="hideOnMobile"><a href="./about.html" title="About Cuzita">About Cuzita</a></li>
-                <li class="hideOnMobile"><a href="./join.html" title="Be Part">Be Part</a></li>
-                <li class="hideOnMobile"><a href="./contact.html" title="Contact Cuzita">Contact Cuzita</a></li>
-                <li class="hideOnMobile"><a href="./team.html" title="Our Team">Our Team</a></li>
-                <i id="fa-bars" class="fa-solid fa-bars" onclick=showSidebar()></i>
-              </ul>  
-          </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" class="rounded-3"></a>
+              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link pointer" style="cursor: pointer;" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" href="team.html">Our team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" href="join.html">Join us</a>
+                  </li>
+  
+                </ul>
+              </div>
+            </div>
+        </nav>
     </header>
 
-<div class="main-container">
-    <main>
-        <div class="join-intro">
-            <p>Join the Cuzita revolution, be part of something <strong>bigger.</strong></p>
-            <img src="./assets/team-cuzita.jpg" alt="">
-        </div>
-
-        <div class="content-details">
-            <hr>
-            <h3>Become part of a community that fosters innovation and empowers the generation of IT leaders.</h3>
-            <a href="./about.html">About us</a>
-        </div>
-
-        <div class="why-cuzita">
-            <h2>Why Join Cuzita?</h2>
-            <ul>
-                <p>Join Cuzita today to gain skills in programming, experience knowledge through hands-on projects, learn to collaborate
-                    and cultivate your leadership skills and take on new challenges.
-                </p>
-                <!-- <p>To connect with like-minded individuals and industry professionals.</p>
-                <p>To gain practical experience through hands-on projects and collaborations.</p> -->
-                <!-- <p>To cultivate your leadership skills and take on new challenges.</p> -->
-            </ul>
-        </div>
-
-        <div class="cuzita-spotlight">
-            <hr>
-            <h2>What Our Members Say</h2>
-            <div class="spotlight">
-                <p>
-                    "Cuzita has been a learning platform for me in my growth as a web developer. The community atmosphere and provided resources
-                    have helped me land a programming skill in various programming languages." - Elijah Kalosa
-                </p>
+    <div class="container-fluid mt-4 pt-4">
+        <main class="container mt-4 pt-4">
+            <div class="align-items-center text-center">
+                <p class="fs-3 fw-bold">Join the Cuzita revolution, be part of something <strong>bigger.</strong></p>
+                <img src="./assets/team-cuzita.jpg" alt="" class="img-fluid rounded" >
             </div>
-            <hr>
-        </div>
 
-        <div class="join-cuzita">
-            <a href="./join.html">Join now</a>
-            <p>Don't miss out on this incredible opportunity.</p>
-        </div>
-
-        <div class="membership">
-            <hr>
-            <h2>How To Be Part</h2>
-            <p>Follow these simple steps to become a member:</p>
-            <ol>
-                <li>Go to the contact page.</li>
-                <li>Send a message that you want to be part.</li>
-                <li>Pay membership fee.</li>
-                <p>All set for you!</p>
-            </ol>
-            <div class="membership-link">
-                <a href="./contact.html">Contact us</a>
-            </div>
-        </div>
-    </main>
-</div>
+            <form action="join.js" method="post" class="bg-light p-3 mt-4 mb-3">
+                <div class="container">
+                    <div class="mt-3">
+                        <label for="First Name" class="form-label text-primary">First Name</label>
+                        <input type="text" name="first_name" id="first_name" class="form-control" placeholder="Enter your first name">
+                    </div>
+                    <div class="mt-3">
+                        <label for="Last Name" class="form-label text-primary">Last Name</label>
+                        <input type="text" name="last_name" id="last_name" class="form-control" placeholder="Enter your last name">
+                    </div>
+                    <div class="mt-3">
+                        <label for="Email" class="form-label text-primary">Email Address</label>
+                        <input type="email" name="eamil" id="eamil" class="form-control" placeholder="Enter your email address">
+                    </div>
+                    <div class="mt-3">
+                        <label for="Phone number" class="form-label text-primary">Phone Number</label>
+                        <input type="tel" name="phone_number" id="phone_number" class="form-control" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <input type="submit" value="Join now" class="btn btn-outline-primary w-100">
+                </div>
+            </form>
+        </main>
+    </div>
 
    <!-- Footer Section -->
- <footer>
-    <div class="about-footer">
-        <div class="contact-content">
-            <h1>LINKS</h1>
-            <div class="footer-about-links">
-                <a href="./contact.html">Contact</a>
-                <a href="./join.html">Join</a>
-                <a href="./events.html">Events</a>
-                <a href="./resources.html">Resources</a>
+   <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="text-center  text-md-start">
+                <!-- Social Media -->
+                <div class="mx-auto text-center">
+                    <h5 class="fw-bold">Follow us</h5>
+                    <div class="d-flex justify-content-center  gap-3">
+                        <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f fa-lg text-white"></i></a>
+                        <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp fa-lg text-white"></i></a>
+                        <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram fa-lg text-white"></i></a>
+                    </div>
+                </div>
             </div>
+            <hr class="border-secondary">
+            <p class="text-center">&copy; 2025 Cuzita - Cavendish University Zambia Information Technology Association</p>
         </div>
-        
-        <div class="follow-content">
-            <h1>SOCIAL MEDIA</h1>
-            <div class="follow-content-i">
-                <a href="https://www.facebook.com/Cuzita" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #127eb3;"></i></a>
-                <a href="https://www.whatsapp.com/Cuzita" target="_blank"><i class="fa-brands fa-whatsapp" style="color: rgb(22, 150, 22);"></i></a>
-                <a href="https://www.instagram.com/Cuzita" target="_blank"><i class="fa-brands fa-instagram" style="color: maroon;"></i></a>
-                <a href="https://www.twitter.com/Cuzita" target="_blank"><i class="fa-brands fa-twitter" style="color: #1da1f2;"></i></a>
-                <a href="https://www.linkedin.com/company/Cuzita" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #0e76a8;"></i></a>
-            </div>
-        </div>
-     
-        <div class="footer-about">
-            <h1>CLUB</h1>
-            <div class="footer-about-links">
-                <a href="./about.html">About</a>
-                <a href="./team.html">Team</a>
-                <a href="./index.html">Home</a>
-                <a href="./faq.html">FAQ</a>
-                <a href="./blog.html">Blog</a>
-            </div>
-        </div>
-    </div>
-    <!-- <div class="newsletter">
-        <h1>NEWSLETTER</h1>
-        <p>Stay updated with our latest news and events. Subscribe to our newsletter!</p>
-        <form action="../subscribe" method="post">
-            <input type="email" name="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </div> -->
-    <div class="content-bottom">
-        <hr class="hr-footer-bottom">
-        <p>&copy; 2024 Cuzita - Cavendish University Zambia Information Technology Association</p>
-    </div>
-  </footer> 
+    </footer>
 </body>
 </html>
