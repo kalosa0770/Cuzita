@@ -46,6 +46,9 @@
                   <li class="nav-item">
                     <a class="nav-link" style="cursor: pointer;" href="join.html">Join us</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" style="cursor: pointer;" href="login.html">Login</a>
+                  </li>
 
                 </ul>
               </div>
@@ -196,17 +199,17 @@
             </div>
             <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner text-center">
-                    <div class="carousel-item active">
+                    <!-- <div class="carousel-item active">
                         <div class="team p-4">
                             <img src="./assets/imag3.jpeg" alt="Denise Seti" class="rounded-3 img-fluid mb-3 border shadow" style="max-width: 250px; height: 250px;">
-                            <h5 class="fw-semibold">President</h5>
+                            <h5 class="fw-semibold">Founder</h5>
                             <p class="text-muted">Elijah Kalosa</p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="carousel-item">
                         <div class="team p-4">
                             <img src="./assets/denise.jpg" alt="Elijah Kalosa" class="rounded-3 img-fluid mb-3 border shadow" style="max-width: 250px; height: 250px;">
-                            <h5 class="fw-semibold">Vice President</h5>
+                            <h5 class="fw-semibold">President</h5>
                             <p class="text-muted">Denise Seti</p>   
                         </div>
                     </div>
@@ -276,7 +279,7 @@
         <div class="row g-4">
             <div class="col-md-4">
                 <div class="card shadow border-0">
-                    <img src="/assets/robotics.jpg" class="card-img-top" alt="Hackathons">
+                    <img src="./assets/robotics.jpg" class="card-img-top" alt="Hackathons">
                     <div class="card-body text-center">
                         <h3 class="fw-semibold">Hackathons</h3>
                         <h4 class="text-muted">Date: 17th August 2024<br>Time: 10:00 - 17:00</h4>
@@ -345,6 +348,28 @@
 </footer>
 
 
-    <script src="./css/fontawesome-free-6.5.2-web/js/index.js"></script>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyC1FXVnQtAZzA67_9bydVae23Ml-aZprIE",
+      authDomain: "cuzita-310e1.firebaseapp.com",
+      projectId: "cuzita-310e1",
+      storageBucket: "cuzita-310e1.firebasestorage.app",
+      messagingSenderId: "549786160843",
+      appId: "1:549786160843:web:f86e56016e0127d694554e",
+      measurementId: "G-ZWSJLSMRVH"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </body>
 </html>
